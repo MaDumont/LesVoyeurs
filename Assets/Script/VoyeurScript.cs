@@ -7,6 +7,7 @@ public class VoyeurScript : MonoBehaviour {
 	public float TurnSpeed;
 	FOV2DEyes eyes;
 	FOV2DVisionCone visionCone;
+	bool targetAcquire = false;
 
 	private Rigidbody _rigidBody;
 
@@ -31,20 +32,23 @@ public class VoyeurScript : MonoBehaviour {
 
 		//_rigidBody.transform.Translate(velocity * Speed * Time.deltaTime);
 		_rigidBody.transform.Rotate (new Vector3(0, rotation,0), TurnSpeed * Time.deltaTime);
+
+		if (targetAcquire && Input.GetMouseButton (0)) {
+			visionCone.status = FOV2DVisionCone.Status.Suspicious;
+		} else if (targetAcquire) {
+			visionCone.status = FOV2DVisionCone.Status.Alert;
+		}else{
+			visionCone.status = FOV2DVisionCone.Status.Idle;
+		}
 	}
 
 	void CheckVision(){
-		bool targetAcquire = false;
+	 	targetAcquire = false;
 		foreach (RaycastHit hit in eyes.hits) {
 			if (hit.transform && hit.transform.tag == "Girl") {
 				targetAcquire = true;
 			}
 		}
-		
-		if (targetAcquire) {
-			visionCone.status = FOV2DVisionCone.Status.Alert;
-		} else {
-			visionCone.status = FOV2DVisionCone.Status.Idle;
-		}
+
 	}
 }
