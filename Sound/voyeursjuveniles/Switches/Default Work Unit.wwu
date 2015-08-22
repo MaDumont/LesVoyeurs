@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F877C573-A9F2-43B3-9C2E-E35EEDF6F777}" SchemaVersion="70">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{F877C573-A9F2-43B3-9C2E-E35EEDF6F777}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="MusicSwitch" ID="{6310B66B-BF81-42D9-8F26-AF6ABBBDFD54}">
+					<ChildrenList>
+						<Switch Name="Stealth" ID="{D690E126-74ED-4916-BFB5-C6FBDCA5DB94}"/>
+						<Switch Name="Action" ID="{3D9A4098-B2CF-4324-9ADE-DC2E5B66FECC}"/>
+						<Switch Name="Win" ID="{CF292808-F90F-4324-AF25-C4F5AD6C42A6}"/>
+						<Switch Name="Loose" ID="{9F6608C9-378A-481F-8BD0-3E2B59683650}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
