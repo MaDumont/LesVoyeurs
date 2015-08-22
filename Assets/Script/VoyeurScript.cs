@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class VoyeurScript : MonoBehaviour {
 
@@ -9,6 +10,8 @@ public class VoyeurScript : MonoBehaviour {
 	FOV2DVisionCone visionCone;
 	Animator anim;
 	bool targetAcquire = false;
+
+	public bool TakingPicture = false;
 
 	private Rigidbody _rigidBody;
 
@@ -41,11 +44,14 @@ public class VoyeurScript : MonoBehaviour {
 		if (targetAcquire && Input.GetMouseButton (0)) {
 			visionCone.status = FOV2DVisionCone.Status.Suspicious;
 			anim.SetBool("camera", true);
+			TakingPicture = true;
 		} else if (targetAcquire) {
 			anim.SetBool("camera", false);
+			TakingPicture = false;
 			visionCone.status = FOV2DVisionCone.Status.Alert;
 		}else{
 			anim.SetBool("camera", false);
+			TakingPicture = false;
 			visionCone.status = FOV2DVisionCone.Status.Idle;
 		}
 
@@ -53,9 +59,12 @@ public class VoyeurScript : MonoBehaviour {
 	}
 
 	void CheckVision(){
+		System.Collections.Generic.HashSet<string> targets = new HashSet<string> ();
+
 	 	targetAcquire = false;
 		foreach (RaycastHit hit in eyes.hits) {
 			if (hit.transform && hit.transform.tag == "Girl") {
+				targets.Add(hit.transform.name);
 				targetAcquire = true;
 			}
 		}
