@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementalBankBuild Version="4" Flags="240381544">
+	<Platform GUID="{B961B51C-34DD-44A2-AF69-856F5EB66F9C}">
+		<Language ID="0">
+			<Bank Name="Init" Hash="2237516267" StreamHash="157587662" Timestamp="130847432951061865"/>
+			<Bank Name="JeuExportSoundbank" Hash="2124391042" StreamHash="157587662" Timestamp="130847426880000000"/>
+			<Bank Name="New_SoundBank" Hash="3948128613" StreamHash="157587662" Timestamp="130847423490000000"/>
+			<Bank Name="vjsoundbank" Hash="4024381150" StreamHash="157587662" Timestamp="130847480547352072"/>
+		</Language>
+	</Platform>
+</IncrementalBankBuild>
