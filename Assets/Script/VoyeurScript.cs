@@ -3,12 +3,13 @@ using System.Collections;
 
 public class VoyeurScript : MonoBehaviour {
 
-	public float Speed;
+    public float Speed;
 	public float TurnSpeed;
 	FOV2DEyes eyes;
 	FOV2DVisionCone visionCone;
 
 	private Rigidbody _rigidBody;
+
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,7 @@ public class VoyeurScript : MonoBehaviour {
 		visionCone = GetComponentInChildren<FOV2DVisionCone>();
 
 		InvokeRepeating ("CheckVision", 0, 0.3f);
+        
 	}
 	
 	// Update is called once per frame
@@ -47,4 +49,5 @@ public class VoyeurScript : MonoBehaviour {
 			visionCone.status = FOV2DVisionCone.Status.Idle;
 		}
 	}
+
 }

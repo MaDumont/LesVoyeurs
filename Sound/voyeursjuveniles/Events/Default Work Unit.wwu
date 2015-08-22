@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AEAF0C71-9699-417E-B7E9-F36908105EEB}" SchemaVersion="70">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{AEAF0C71-9699-417E-B7E9-F36908105EEB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlayMusic" ID="{DA8D34D3-F0E0-4E32-9E35-14DDD677E5B4}">
+					<ChildrenList>
+						<Action Name="Set Switch" ID="{812C51E0-4CF2-48A9-B908-FF6E7BED2E83}" ShortID="37545254" Type="SetSwitch" Scope="All" Global="false">
+							<SetItemParam>
+								<Group Name="MusicSwitch" ID="{6310B66B-BF81-42D9-8F26-AF6ABBBDFD54}"/>
+								<GroupItem Name="Stealth" ID="{D690E126-74ED-4916-BFB5-C6FBDCA5DB94}"/>
+							</SetItemParam>
+						</Action>
+						<Action Name="Play" ID="{765F5614-58FA-49D6-8888-02162BE13402}" ShortID="898081452" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A3166E1F-2D91-4653-A841-23324C0AD48D}" Global="false">
+									<ObjectRef Name="MusicSwitch" ID="{800EDF3B-E438-46D4-A8F6-97DB6D8BE4D2}" WorkUnitID="{26F773D7-C7F1-454A-8FBE-2666A2070CAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

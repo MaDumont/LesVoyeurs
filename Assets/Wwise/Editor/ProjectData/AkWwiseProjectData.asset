@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569b8c29b2ef0df4d8edbc38d441b7f2, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: Profile
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{AEAF0C71-9699-417E-B7E9-F36908105EEB}'
+    m_lastTimePsrt1: -168622664
+    m_lastTimePart2: -1999459580
+    List:
+    - Name: PlayMusic
+      Path: Default Work Unit\PlayMusic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlayMusic
+        ObjectType: 3
+      ID: 417627684
+      Guid: d3348ddae0f0324e9e3514ddd677e5b4
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{507C1F72-95D7-418E-A525-12064DBED25E}'
+    m_lastTimePsrt1: -168180251
+    m_lastTimePart2: -1999459580
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{3F98A906-0388-4B7D-8B29-F4B03D9552D2}'
+    m_lastTimePsrt1: -143019607
+    m_lastTimePart2: -1999459580
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{F877C573-A9F2-43B3-9C2E-E35EEDF6F777}'
+    m_lastTimePsrt1: -142879526
+    m_lastTimePart2: -1999459580
+    List:
+    - Name: MusicSwitch
+      Path: Default Work Unit\MusicSwitch
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MusicSwitch
+        ObjectType: 11
+      ID: 1445037870
+      Guid: 6bb6106381bfd9428f26af6abbbdfd54
+      values:
+      - Action
+      - Loose
+      - Stealth
+      - Win
+      ValueIcons:
+      - ElementName: Action
+        ObjectType: 10
+      - ElementName: Loose
+        ObjectType: 10
+      - ElementName: Stealth
+        ObjectType: 10
+      - ElementName: Win
+        ObjectType: 10
+      valueIDs: 272e770cb9af6d0a7a4468ad6d07663a
+      ValueGuids:
+      - bytes: 98409a3dcfb224439adedc2e5b66fecc
+      - bytes: c908669f8a371f488bd03e2b59683650
+      - bytes: 26e190d6ed741649bfb5c6fbdca5db94
+      - bytes: 082829cf0ff92443af25c4f5ad6c42a6
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{83210D03-6B49-4D8B-BAB1-885C4E05A5F8}'
+    m_lastTimePsrt1: -143304183
+    m_lastTimePart2: -1999459580
+    List: []
+  ExpandedItems:
+  - /voyeursjuveniles
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: undBanksneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  memoryCutoffThreshold: .949999988
