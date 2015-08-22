@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: 2e9c0fe88b1fe1542a59a63f5b5ebebe
+timeCreated: 1440277590
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Arbuste001
+    100002: //RootNode
+    100004: bain001
+    100006: Comptoir001
+    100008: Coussin_005
+    100010: Coussin_007
+    100012: hotte001
+    100014: Lavabo001
+    100016: lit_grand001
+    100018: lit_grand002
+    100020: matela2
+    100022: matelas1
+    100024: Object021
+    100026: Object025
+    100028: Object026
+    100030: sofa_grand001
+    100032: sofa_grand002
+    100034: tableau (tv)004
+    100036: toilette001
+    400000: Arbuste001
+    400002: //RootNode
+    400004: bain001
+    400006: Comptoir001
+    400008: Coussin_005
+    400010: Coussin_007
+    400012: hotte001
+    400014: Lavabo001
+    400016: lit_grand001
+    400018: lit_grand002
+    400020: matela2
+    400022: matelas1
+    400024: Object021
+    400026: Object025
+    400028: Object026
+    400030: sofa_grand001
+    400032: sofa_grand002
+    400034: tableau (tv)004
+    400036: toilette001
+    2300000: Arbuste001
+    2300002: bain001
+    2300004: Comptoir001
+    2300006: Coussin_005
+    2300008: Coussin_007
+    2300010: hotte001
+    2300012: Lavabo001
+    2300014: lit_grand001
+    2300016: lit_grand002
+    2300018: matela2
+    2300020: matelas1
+    2300022: Object021
+    2300024: Object025
+    2300026: Object026
+    2300028: sofa_grand001
+    2300030: sofa_grand002
+    2300032: tableau (tv)004
+    2300034: toilette001
+    3300000: Arbuste001
+    3300002: bain001
+    3300004: Comptoir001
+    3300006: Coussin_005
+    3300008: Coussin_007
+    3300010: hotte001
+    3300012: Lavabo001
+    3300014: lit_grand001
+    3300016: lit_grand002
+    3300018: matela2
+    3300020: matelas1
+    3300022: Object021
+    3300024: Object025
+    3300026: Object026
+    3300028: sofa_grand001
+    3300030: sofa_grand002
+    3300032: tableau (tv)004
+    3300034: toilette001
+    4300000: sofa_grand001
+    4300002: Coussin_005
+    4300004: Comptoir001
+    4300006: Arbuste001
+    4300008: hotte001
+    4300010: Object021
+    4300012: lit_grand001
+    4300014: Lavabo001
+    4300016: toilette001
+    4300018: bain001
+    4300020: tableau (tv)004
+    4300022: Object025
+    4300024: Object026
+    4300026: lit_grand002
+    4300028: sofa_grand002
+    4300030: Coussin_007
+    4300032: matelas1
+    4300034: matela2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

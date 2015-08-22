@@ -90,7 +90,6 @@ public class VoyeurScript : MonoBehaviour {
 				{
 					points *= 100;
 				}
-				Debug.Log(points.ToString() + " points");
 				GameManager.getInstance().updatePoints(points);
 			}
 		}
