@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 85c5f870f03c0e84e851e994776d6d1b
-timeCreated: 1440262907
+guid: a5de8539ab4faf442ac5e9e93ac6b229
+timeCreated: 1440262573
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -21,8 +21,9 @@ ModelImporter:
     100026: BN_K_R_Leg_001
     100028: BN_K_ROOT_001
     100030: BN_K_Torso_001
-    100032: SK_Kid
-    100034: //RootNode
+    100032: IK Chain003
+    100034: IK Chain004
+    100036: //RootNode
     400000: Be_K_Camera_End_001
     400002: Be_K_Head_End_001
     400004: Be_K_L_Arm_End_001
@@ -39,11 +40,11 @@ ModelImporter:
     400026: BN_K_R_Leg_001
     400028: BN_K_ROOT_001
     400030: BN_K_Torso_001
-    400032: SK_Kid
-    400034: //RootNode
-    4300000: SK_Kid
+    400032: IK Chain003
+    400034: IK Chain004
+    400036: //RootNode
+    7400000: Take 001
     9500000: //RootNode
-    13700000: SK_Kid
   materials:
     importMaterials: 1
     materialName: 0
