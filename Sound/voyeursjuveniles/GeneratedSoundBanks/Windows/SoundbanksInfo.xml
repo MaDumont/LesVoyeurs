@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4073906140" Language="SFX">
+			<ShortName>vjsoundbank</ShortName>
+			<Path>vjsoundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="306800208" Name="Camera"/>
+				<Event Id="2202116817" Name="Chien_Jappe"/>
+				<Event Id="2526676801" Name="Enfants_Surpris"/>
+				<Event Id="2385628198" Name="Footsteps"/>
+				<Event Id="3310045490" Name="Homme_Hey"/>
+				<Event Id="146532035" Name="Horloge"/>
+				<Event Id="853594596" Name="LevelComplete"/>
+				<Event Id="3297134706" Name="Planche_craque"/>
+				<Event Id="417627684" Name="PlayMusic"/>
+				<Event Id="4114089669" Name="Porte_Ferme"/>
+				<Event Id="3529544213" Name="Porte_Ouvre"/>
+				<Event Id="2130696827" Name="Respiration_Profonde"/>
+				<Event Id="895420298" Name="Television_Noise"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="24340544" Language="SFX">
+					<ShortName>sfx_action_door_opening_04.wav</ShortName>
+					<Path>SFX\sfx_action_door_opening_04_9E69E797.wem</Path>
+				</File>
+				<File Id="89807300" Language="SFX">
+					<ShortName>sfx_action_door_closing_01.wav</ShortName>
+					<Path>SFX\sfx_action_door_closing_01_9E69E797.wem</Path>
+				</File>
+				<File Id="118536100" Language="SFX">
+					<ShortName>sfx_walla_human_scream_01.wav</ShortName>
+					<Path>SFX\sfx_walla_human_scream_01_9E69E797.wem</Path>
+				</File>
+				<File Id="147817659" Language="SFX">
+					<ShortName>sfx_walla_human_hey_02.wav</ShortName>
+					<Path>SFX\sfx_walla_human_hey_02_9E69E797.wem</Path>
+				</File>
+				<File Id="184106530" Language="SFX">
+					<ShortName>sfx_action_door_closing_04.wav</ShortName>
+					<Path>SFX\sfx_action_door_closing_04_9E69E797.wem</Path>
+				</File>
+				<File Id="207537850" Language="SFX">
+					<ShortName>sfx_walla_human_footsteps_run-001.wav</ShortName>
+					<Path>SFX\sfx_walla_human_footsteps_run-001_F947532D.wem</Path>
+				</File>
+				<File Id="210994172" Language="SFX">
+					<ShortName>sfx_walla_chien_jappement_03.wav</ShortName>
+					<Path>SFX\sfx_walla_chien_jappement_03_9E69E797.wem</Path>
+				</File>
+				<File Id="235775106" Language="SFX">
+					<ShortName>sfx_ambiance_tv_noise_01.wav</ShortName>
+					<Path>SFX\sfx_ambiance_tv_noise_01_9E69E797.wem</Path>
+				</File>
+				<File Id="237475759" Language="SFX">
+					<ShortName>mus_action_win.wav</ShortName>
+					<Path>SFX\mus_action_win_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="237706136" Language="SFX">
+					<ShortName>sfx_walla_humain_respiration_03.wav</ShortName>
+					<Path>SFX\sfx_walla_humain_respiration_03_9E69E797.wem</Path>
+				</File>
+				<File Id="258489339" Language="SFX">
+					<ShortName>sfx_walla_human_footsteps-002.wav</ShortName>
+					<Path>SFX\sfx_walla_human_footsteps-002_9E69E797.wem</Path>
+				</File>
+				<File Id="271594494" Language="SFX">
+					<ShortName>sfx_ambiance_tictac.wav</ShortName>
+					<Path>SFX\sfx_ambiance_tictac_9E69E797.wem</Path>
+				</File>
+				<File Id="304962795" Language="SFX">
+					<ShortName>sfx_walla_human_footsteps-001.wav</ShortName>
+					<Path>SFX\sfx_walla_human_footsteps-001_9E69E797.wem</Path>
+				</File>
+				<File Id="311205504" Language="SFX">
+					<ShortName>sfx_impact_window.wav</ShortName>
+					<Path>SFX\sfx_impact_window_9E69E797.wem</Path>
+				</File>
+				<File Id="406352138" Language="SFX">
+					<ShortName>sfx_walla_human_footsteps_run-003.wav</ShortName>
+					<Path>SFX\sfx_walla_human_footsteps_run-003_605D1398.wem</Path>
+				</File>
+				<File Id="417555839" Language="SFX">
+					<ShortName>sfx_action_door_opening_03.wav</ShortName>
+					<Path>SFX\sfx_action_door_opening_03_9E69E797.wem</Path>
+				</File>
+				<File Id="417809380" Language="SFX">
+					<ShortName>sfx_action_door_closing_03.wav</ShortName>
+					<Path>SFX\sfx_action_door_closing_03_9E69E797.wem</Path>
+				</File>
+				<File Id="439613278" Language="SFX">
+					<ShortName>sfx_ambiance_floorcrack-002.wav</ShortName>
+					<Path>SFX\sfx_ambiance_floorcrack-002_9E69E797.wem</Path>
+				</File>
+				<File Id="443444411" Language="SFX">
+					<ShortName>sfx_walla_human_footsteps_run-002.wav</ShortName>
+					<Path>SFX\sfx_walla_human_footsteps_run-002_79F65737.wem</Path>
+				</File>
+				<File Id="496202461" Language="SFX">
+					<ShortName>sfx_walla_human_footsteps-005.wav</ShortName>
+					<Path>SFX\sfx_walla_human_footsteps-005_9E69E797.wem</Path>
+				</File>
+				<File Id="532197435" Language="SFX">
+					<ShortName>mus_action_intro.wav</ShortName>
+					<Path>SFX\mus_action_intro_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="567395612" Language="SFX">
+					<ShortName>sfx_walla_human_scream_03.wav</ShortName>
+					<Path>SFX\sfx_walla_human_scream_03_9E69E797.wem</Path>
+				</File>
+				<File Id="616951461" Language="SFX">
+					<ShortName>sfx_walla_chien_jappement_02.wav</ShortName>
+					<Path>SFX\sfx_walla_chien_jappement_02_9E69E797.wem</Path>
+				</File>
+				<File Id="680067133" Language="SFX">
+					<ShortName>sfx_action_door_closing_02.wav</ShortName>
+					<Path>SFX\sfx_action_door_closing_02_9E69E797.wem</Path>
+				</File>
+				<File Id="681265171" Language="SFX">
+					<ShortName>sfx_walla_chien_jappement_01.wav</ShortName>
+					<Path>SFX\sfx_walla_chien_jappement_01_9E69E797.wem</Path>
+				</File>
+				<File Id="701939739" Language="SFX">
+					<ShortName>sfx_walla_humain_respiration_01.wav</ShortName>
+					<Path>SFX\sfx_walla_humain_respiration_01_9E69E797.wem</Path>
+				</File>
+				<File Id="719800033" Language="SFX">
+					<ShortName>sfx_action_door_opening_02.wav</ShortName>
+					<Path>SFX\sfx_action_door_opening_02_9E69E797.wem</Path>
+				</File>
+				<File Id="722259538" Language="SFX">
+					<ShortName>mus_action_loose.wav</ShortName>
+					<Path>SFX\mus_action_loose_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="746432042" Language="SFX">
+					<ShortName>mus_action_loop.wav</ShortName>
+					<Path>SFX\mus_action_loop_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="748933475" Language="SFX">
+					<ShortName>sfx_walla_chien_jappementlong_02.wav</ShortName>
+					<Path>SFX\sfx_walla_chien_jappementlong_02_9E69E797.wem</Path>
+				</File>
+				<File Id="767655642" Language="SFX">
+					<ShortName>sfx_walla_humain_respiration_02.wav</ShortName>
+					<Path>SFX\sfx_walla_humain_respiration_02_9E69E797.wem</Path>
+				</File>
+				<File Id="791901746" Language="SFX">
+					<ShortName>sfx_walla_human_hey_01.wav</ShortName>
+					<Path>SFX\sfx_walla_human_hey_01_9E69E797.wem</Path>
+				</File>
+				<File Id="835327349" Language="SFX">
+					<ShortName>mus_stinger.wav</ShortName>
+					<Path>SFX\mus_stinger_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="856207489" Language="SFX">
+					<ShortName>sfx_ambiance_floorcrack-001.wav</ShortName>
+					<Path>SFX\sfx_ambiance_floorcrack-001_9E69E797.wem</Path>
+				</File>
+				<File Id="902191248" Language="SFX">
+					<ShortName>sfx_walla_chien_jappementlong_01.wav</ShortName>
+					<Path>SFX\sfx_walla_chien_jappementlong_01_9E69E797.wem</Path>
+				</File>
+				<File Id="906597988" Language="SFX">
+					<ShortName>mus_action_preloop.wav</ShortName>
+					<Path>SFX\mus_action_preloop_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="911014057" Language="SFX">
+					<ShortName>mus_stealth_loop.wav</ShortName>
+					<Path>SFX\mus_stealth_loop_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="927288190" Language="SFX">
+					<ShortName>sfx_walla_human_footsteps-004.wav</ShortName>
+					<Path>SFX\sfx_walla_human_footsteps-004_9E69E797.wem</Path>
+				</File>
+				<File Id="938746417" Language="SFX">
+					<ShortName>sfx_walla_human_footsteps_run-004.wav</ShortName>
+					<Path>SFX\sfx_walla_human_footsteps_run-004_ACF0E8C8.wem</Path>
+				</File>
+				<File Id="998361285" Language="SFX">
+					<ShortName>mus_stealth_intro.wav</ShortName>
+					<Path>SFX\mus_stealth_intro_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="1001971756" Language="SFX">
+					<ShortName>sfx_walla_human_scream_02.wav</ShortName>
+					<Path>SFX\sfx_walla_human_scream_02_9E69E797.wem</Path>
+				</File>
+				<File Id="1049477809" Language="SFX">
+					<ShortName>sfx_walla_human_footsteps-003.wav</ShortName>
+					<Path>SFX\sfx_walla_human_footsteps-003_9E69E797.wem</Path>
+				</File>
+				<File Id="1057437662" Language="SFX">
+					<ShortName>sfx_camera.wav</ShortName>
+					<Path>SFX\sfx_camera_9E69E797.wem</Path>
+				</File>
+				<File Id="1062291007" Language="SFX">
+					<ShortName>sfx_ambiance_floorcrack.wav</ShortName>
+					<Path>SFX\sfx_ambiance_floorcrack_9E69E797.wem</Path>
+				</File>
+				<File Id="1070246284" Language="SFX">
+					<ShortName>sfx_action_door_opening_01.wav</ShortName>
+					<Path>SFX\sfx_action_door_opening_01_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3F98A906-0388-4B7D-8B29-F4B03D9552D2}" SchemaVersion="70">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{3F98A906-0388-4B7D-8B29-F4B03D9552D2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3F98A906-0388-4B7D-8B29-F4B03D9552D2}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Footsteps_speed" ID="{A807D5AF-0E7F-4F4C-AE48-86741AE1BB67}">
+					<ChildrenList>
+						<State Name="None" ID="{A22152CD-D572-463D-B0A2-340FC1C9F05F}"/>
+						<State Name="Walk" ID="{2A5447A0-F907-46B6-9B90-6D408ACED2B2}"/>
+						<State Name="Run" ID="{D48B6445-C6E1-4C1F-815D-32BC49C6A9C0}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

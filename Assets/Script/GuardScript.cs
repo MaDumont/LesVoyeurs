@@ -39,22 +39,30 @@ public class GuardScript : MonoBehaviour {
 	}
 
 	void Alert(){
-		if (currentState != State.ALERT) {
+		visionCone.status = FOV2DVisionCone.Status.Alert;	
+
+		if (currentState != State.ALERT && !chasePlayer) {
+			GameManager.getInstance().updatePoints(-5);
 			Debug.Log ("Alert!");
 			currentState = State.ALERT;
-			visionCone.status = FOV2DVisionCone.Status.Alert;
-			anim.SetBool ("Move", false);
+			anim.SetBool ("Move", true);
 			anim.SetBool ("Detect", true);
 			agent.Stop ();
-			chasePlayer = true;
 		}
 	}
 
+	void UhOhDone()
+	{
+		anim.SetBool ("Detect", false);
+		Walk ();
+	}
+
 	void NoAlert(){
+		visionCone.status = FOV2DVisionCone.Status.Idle;
+	
 		if (currentState == State.ALERT) {
 			Debug.Log ("NoAlert");
 			currentState = State.IDLE;
-			visionCone.status = FOV2DVisionCone.Status.Idle;
 			anim.SetBool("Detect", false);
 		}
 	}
@@ -66,7 +74,7 @@ public class GuardScript : MonoBehaviour {
 		agent.Resume ();
 		GotoNextPoint ();
 	}
-
+	
 	public void IdleEnd(){
 		if(currentState == State.IDLE)
 			Walk ();
@@ -80,7 +88,6 @@ public class GuardScript : MonoBehaviour {
 
 		if (lastSeen != null && chasePlayer) {
 			agent.destination = lastSeen;
-			chasePlayer = false;
 		} else {
 			// Set the agent to go to the currently selected destination.
 			agent.destination = points [destPoint].position;
@@ -114,5 +121,8 @@ public class GuardScript : MonoBehaviour {
 			Alert();
 		else
 			NoAlert();
+
+		
+		chasePlayer = alert;
 	}
 }
