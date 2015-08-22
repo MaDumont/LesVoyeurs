@@ -5,9 +5,9 @@ using UnityEngine.UI;
 public class DetectionSonore : MonoBehaviour {
 
 
-    private readonly float SOUND_BROADCASTING_RUN = 3;
-    private readonly float SOUND_BROADCASTING_WALK = 2;
-    private readonly float SOUND_BROADCASTING_CROUNCH = 1;
+    private readonly float SOUND_BROADCASTING_RUN = 10;
+    private readonly float SOUND_BROADCASTING_WALK = 5;
+    private readonly float SOUND_BROADCASTING_CROUNCH = 2;
     private readonly float SOUND_BROADCASTING_STILL = 0;
 
     private readonly float QUANTITY_GIRL_HEAR_SOUND = 0.1f;

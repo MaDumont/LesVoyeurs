@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SoundManager : AudioMaster{
+public class SoundManager: MonoBehaviour{
 
     uint bankID;
 
-    public void Start()
+    public void Awake()
     {
-        AkSoundEngine.LoadBank("VOICI VOILA", AkSoundEngine.AK_DEFAULT_POOL_ID, out bankID);
+        AkSoundEngine.LoadBank("vjsoundbank", AkSoundEngine.AK_DEFAULT_POOL_ID, out bankID);
     }
 
     private void PlayEvent(string eventName)
@@ -25,42 +25,66 @@ public class SoundManager : AudioMaster{
     //Il faut changer le nom des events !!!!!!!
     public void StartGirlScream()
     {
-        PlayEvent("Voici VOila");
+        PlayEvent("Enfants_Surpris");
     }
     public void StopGirlScream()
     {
-        StopEvent("Voici voila");
+        StopEvent("Enfants_Surpris");
     }
     public void StartParentScream()
     {
-        PlayEvent("Voici VOila");
+        PlayEvent("Homme_Hey");
     }
     public void StopParentScream()
     {
-        StopEvent("Voici voila");
+        StopEvent("Homme_Hey");
     }
     public void StartStealthMusic()
     {
-        PlayEvent("Voici VOila");
+        PlayEvent("PlayMusic");
     }
     public void StopStealthMusic()
     {
-        StopEvent("Voici voila");
+        StopEvent("PlayMusic");
     }
     public void StartStressingMusic()
     {
-        PlayEvent("Voici VOila");
+        PlayEvent("PlayMusic");
     }
     public void StopStressingMussic()
     {
-        StopEvent("Voici voila");
+        StopEvent("PlayMusic");
     }
     public void StartIntroMusic()
     {
-        PlayEvent("Intro");
+        PlayEvent("PlayMusic");
     }
     public void StopIntroMusic()
     {
-        StopEvent("BDS");
+        StopEvent("PLayMusic");
+    }
+    public void StartWalkSound()
+    {
+        PlayEvent("Footsteps");
+    }
+    public void StopWalkSound()
+    {
+        StopEvent("Footsteps");
+    }
+    public void StartChienJappe()
+    {
+        PlayEvent("Chien_Jappe");
+    }
+    public void StopChienJappe()
+    {
+        StopEvent("Chien_Jappe");
+    }
+    public void StartWinLevelSound()
+    {
+        PlayEvent("LevelComplete");
+    }
+    public void StopWinLevelSound()
+    {
+        StopEvent("LevelComplete");
     }
 }

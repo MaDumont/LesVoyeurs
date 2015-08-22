@@ -16,9 +16,89 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AEAF0C71-9699-417E-B7E9-F36908105EEB}'
-    m_lastTimePsrt1: -168622664
-    m_lastTimePart2: -1999459580
+    m_lastTimePsrt1: 725525099
+    m_lastTimePart2: -1999459549
     List:
+    - Name: Camera
+      Path: Default Work Unit\Camera
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Camera
+        ObjectType: 3
+      ID: 306800208
+      Guid: c3c95e1dc91a0045ab75dedd76b101f3
+      maxAttenuation: 0
+    - Name: Chien_Jappe
+      Path: Default Work Unit\Chien_Jappe
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Chien_Jappe
+        ObjectType: 3
+      ID: -2092850479
+      Guid: 3132374f19cbe2479127a384e58f282a
+      maxAttenuation: 0
+    - Name: Enfants_Surpris
+      Path: Default Work Unit\Enfants_Surpris
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Enfants_Surpris
+        ObjectType: 3
+      ID: -1768290495
+      Guid: 283b7dc3f16b4847a18657d74957ac7e
+      maxAttenuation: 0
+    - Name: Footsteps
+      Path: Default Work Unit\Footsteps
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Footsteps
+        ObjectType: 3
+      ID: -1909339098
+      Guid: ab8e7352cd49fc49bcc7fa99be26ecf9
+      maxAttenuation: 0
+    - Name: Homme_Hey
+      Path: Default Work Unit\Homme_Hey
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Homme_Hey
+        ObjectType: 3
+      ID: -984921806
+      Guid: 7ca596660ed77a42ac83e3f2ff4666f5
+      maxAttenuation: 0
+    - Name: Horloge
+      Path: Default Work Unit\Horloge
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Horloge
+        ObjectType: 3
+      ID: 146532035
+      Guid: 0539adf2867338489b7a0af72bf00a92
+      maxAttenuation: 0
+    - Name: LevelComplete
+      Path: Default Work Unit\LevelComplete
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LevelComplete
+        ObjectType: 3
+      ID: 853594596
+      Guid: 81b1ec7d24b14840835589c0128959a6
+      maxAttenuation: 0
+    - Name: Planche_craque
+      Path: Default Work Unit\Planche_craque
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Planche_craque
+        ObjectType: 3
+      ID: -997832590
+      Guid: cbfe5079bf5f5a48b021fab471296e68
+      maxAttenuation: 0
     - Name: PlayMusic
       Path: Default Work Unit\PlayMusic
       PathAndIcons:
@@ -29,26 +109,91 @@ MonoBehaviour:
       ID: 417627684
       Guid: d3348ddae0f0324e9e3514ddd677e5b4
       maxAttenuation: 0
+    - Name: Porte_Ferme
+      Path: Default Work Unit\Porte_Ferme
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Porte_Ferme
+        ObjectType: 3
+      ID: -180877627
+      Guid: b5fd4e35e9512e45a0bb63ce4c97e44a
+      maxAttenuation: 0
+    - Name: Porte_Ouvre
+      Path: Default Work Unit\Porte_Ouvre
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Porte_Ouvre
+        ObjectType: 3
+      ID: -765423083
+      Guid: a2519ad99d889d4d9caacab0ed558297
+      maxAttenuation: 0
+    - Name: Respiration_Profonde
+      Path: Default Work Unit\Respiration_Profonde
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Respiration_Profonde
+        ObjectType: 3
+      ID: 2130696827
+      Guid: eb94b404b8f4d24281863dea406e2b58
+      maxAttenuation: 0
+    - Name: Television_Noise
+      Path: Default Work Unit\Television_Noise
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Television_Noise
+        ObjectType: 3
+      ID: 895420298
+      Guid: b888ec49f7f8734382e793a423f784da
+      maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{507C1F72-95D7-418E-A525-12064DBED25E}'
-    m_lastTimePsrt1: -168180251
-    m_lastTimePart2: -1999459580
+    m_lastTimePsrt1: 738926025
+    m_lastTimePart2: -1999459549
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3F98A906-0388-4B7D-8B29-F4B03D9552D2}'
-    m_lastTimePsrt1: -143019607
-    m_lastTimePart2: -1999459580
-    List: []
+    m_lastTimePsrt1: 780347502
+    m_lastTimePart2: -1999459549
+    List:
+    - Name: Footsteps_speed
+      Path: Default Work Unit\Footsteps_speed
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Footsteps_speed
+        ObjectType: 9
+      ID: -1112615498
+      Guid: afd507a87f0e4c4fae4886741ae1bb67
+      values:
+      - None
+      - Run
+      - Walk
+      ValueIcons:
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Run
+        ObjectType: 8
+      - ElementName: Walk
+        ObjectType: 8
+      valueIDs: db3ba32ca8b9722abe6db17d
+      ValueGuids:
+      - bytes: cd5221a272d53d46b0a2340fc1c9f05f
+      - bytes: 45648bd4e1c61f4c815d32bc49c6a9c0
+      - bytes: a047542a07f9b6469b906d408aced2b2
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F877C573-A9F2-43B3-9C2E-E35EEDF6F777}'
-    m_lastTimePsrt1: -142879526
-    m_lastTimePart2: -1999459580
+    m_lastTimePsrt1: 780487596
+    m_lastTimePart2: -1999459549
     List:
     - Name: MusicSwitch
       Path: Default Work Unit\MusicSwitch
@@ -83,11 +228,22 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{83210D03-6B49-4D8B-BAB1-885C4E05A5F8}'
-    m_lastTimePsrt1: -143304183
-    m_lastTimePart2: -1999459580
-    List: []
+    m_lastTimePsrt1: -1595592717
+    m_lastTimePart2: -1999459536
+    List:
+    - Name: vjsoundbank
+      Path: Default Work Unit\vjsoundbank
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: vjsoundbank
+        ObjectType: 7
+      ID: -221061156
+      Guid: 59d6ac0055fff94fabd3de7813fb9904
   ExpandedItems:
   - /voyeursjuveniles
+  - /voyeursjuveniles/Events
+  - /voyeursjuveniles/Events/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

@@ -1,0 +1,70 @@
+Event	ID	Name			Wwise Object Path	Notes
+	146532035	Horloge			\Default Work Unit\Horloge	
+	306800208	Camera			\Default Work Unit\Camera	
+	417627684	PlayMusic			\Default Work Unit\PlayMusic	
+	853594596	LevelComplete			\Default Work Unit\LevelComplete	
+	895420298	Television_Noise			\Default Work Unit\Television_Noise	
+	2130696827	Respiration_Profonde			\Default Work Unit\Respiration_Profonde	
+	2202116817	Chien_Jappe			\Default Work Unit\Chien_Jappe	
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+	2526676801	Enfants_Surpris			\Default Work Unit\Enfants_Surpris	
+	3297134706	Planche_craque			\Default Work Unit\Planche_craque	
+	3310045490	Homme_Hey			\Default Work Unit\Homme_Hey	
+	3529544213	Porte_Ouvre			\Default Work Unit\Porte_Ouvre	
+	4114089669	Porte_Ferme			\Default Work Unit\Porte_Ferme	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3182351798	Footsteps_speed			\Default Work Unit\Footsteps_speed	
+
+State	ID	Name	State Group			Notes
+	712161704	Run	Footsteps_speed			
+	748895195	None	Footsteps_speed			
+	2108779966	Walk	Footsteps_speed			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	24340544	sfx_action_door_opening_04	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_action_door_opening_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Porte_Ouvre\sfx_action_door_opening_04		59158
+	89807300	sfx_action_door_closing_01	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_action_door_closing_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Porte_Ferme\sfx_action_door_closing_01		34204
+	118536100	sfx_walla_human_scream_01	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_scream_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enfant_Surpris\sfx_walla_human_scream_01		113568
+	147817659	sfx_walla_human_hey_02	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_hey_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Homme_Hey\sfx_walla_human_hey_02		56982
+	184106530	sfx_action_door_closing_04	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_action_door_closing_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Porte_Ferme\sfx_action_door_closing_04		99730
+	207537850	sfx_walla_human_footsteps_run-001	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_footsteps_run-001_F947532D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Speed\Footsteps_Run\sfx_walla_human_footsteps_run-001		21112
+	210994172	sfx_walla_chien_jappement_03	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_chien_jappement_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chien_Jappement\sfx_walla_chien_jappement_03		28888
+	235775106	sfx_ambiance_tv_noise_01	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_ambiance_tv_noise_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_ambiance_tv_noise_01		8026264
+	237475759	mus_action_win	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\mus_action_win_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\mus_action_win\mus_action_win		1693504
+	237706136	sfx_walla_humain_respiration_03	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_humain_respiration_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Respiration_Profonde\sfx_walla_humain_respiration_03		73270
+	258489339	sfx_walla_human_footsteps-002	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_footsteps-002_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Speed\Footsteps_Walk\sfx_walla_human_footsteps-002		31816
+	271594494	sfx_ambiance_tictac	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_ambiance_tictac_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_ambiance_tictac		2751122
+	304962795	sfx_walla_human_footsteps-001	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_footsteps-001_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Speed\Footsteps_Walk\sfx_walla_human_footsteps-001		30934
+	311205504	sfx_impact_window	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_impact_window_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_impact_window		807380
+	406352138	sfx_walla_human_footsteps_run-003	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_footsteps_run-003_605D1398.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Speed\Footsteps_Run\sfx_walla_human_footsteps_run-003		25622
+	417555839	sfx_action_door_opening_03	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_action_door_opening_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Porte_Ouvre\sfx_action_door_opening_03		62734
+	417809380	sfx_action_door_closing_03	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_action_door_closing_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Porte_Ferme\sfx_action_door_closing_03		89146
+	439613278	sfx_ambiance_floorcrack-002	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_ambiance_floorcrack-002_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Planche_craque\sfx_ambiance_floorcrack-002		71148
+	443444411	sfx_walla_human_footsteps_run-002	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_footsteps_run-002_79F65737.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Speed\Footsteps_Run\sfx_walla_human_footsteps_run-002		17864
+	496202461	sfx_walla_human_footsteps-005	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_footsteps-005_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Speed\Footsteps_Walk\sfx_walla_human_footsteps-005		25642
+	532197435	mus_action_intro	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\mus_action_intro_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Action\mus_action_intro\mus_action_intro		1058464
+	567395612	sfx_walla_human_scream_03	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_scream_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enfant_Surpris\sfx_walla_human_scream_03		89782
+	616951461	sfx_walla_chien_jappement_02	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_chien_jappement_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chien_Jappement\sfx_walla_chien_jappement_02		25050
+	680067133	sfx_action_door_closing_02	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_action_door_closing_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Porte_Ferme\sfx_action_door_closing_02		43916
+	681265171	sfx_walla_chien_jappement_01	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_chien_jappement_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chien_Jappement\sfx_walla_chien_jappement_01		28262
+	701939739	sfx_walla_humain_respiration_01	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_humain_respiration_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Respiration_Profonde\sfx_walla_humain_respiration_01		63568
+	719800033	sfx_action_door_opening_02	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_action_door_opening_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Porte_Ouvre\sfx_action_door_opening_02		68192
+	722259538	mus_action_loose	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\mus_action_loose_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\mus_action_loose\mus_action_loose		1693504
+	746432042	mus_action_loop	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\mus_action_loop_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Action\mus_action_loop\mus_action_loop		6985504
+	748933475	sfx_walla_chien_jappementlong_02	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_chien_jappementlong_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chien_Jappement\sfx_walla_chien_jappementlong_02		246952
+	767655642	sfx_walla_humain_respiration_02	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_humain_respiration_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Respiration_Profonde\sfx_walla_humain_respiration_02		74538
+	791901746	sfx_walla_human_hey_01	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_hey_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Homme_Hey\sfx_walla_human_hey_01		28546
+	835327349	mus_stinger	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\mus_stinger_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\mus_stinger\mus_stinger		505840
+	856207489	sfx_ambiance_floorcrack-001	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_ambiance_floorcrack-001_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Planche_craque\sfx_ambiance_floorcrack-001		138992
+	902191248	sfx_walla_chien_jappementlong_01	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_chien_jappementlong_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chien_Jappement\sfx_walla_chien_jappementlong_01		137420
+	906597988	mus_action_preloop	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\mus_action_preloop_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Action\mus_action_preloop\mus_action_preloop		6879664
+	911014057	mus_stealth_loop	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\mus_stealth_loop_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Stealth\mus_stealth_loop\mus_stealth_loop		6773824
+	927288190	sfx_walla_human_footsteps-004	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_footsteps-004_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Speed\Footsteps_Walk\sfx_walla_human_footsteps-004		26524
+	938746417	sfx_walla_human_footsteps_run-004	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_footsteps_run-004_ACF0E8C8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Speed\Footsteps_Run\sfx_walla_human_footsteps_run-004		17024
+	998361285	mus_stealth_intro	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\mus_stealth_intro_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Stealth\mus_stealth_intro\mus_stealth_intro		10160704
+	1001971756	sfx_walla_human_scream_02	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_scream_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enfant_Surpris\sfx_walla_human_scream_02		137994
+	1049477809	sfx_walla_human_footsteps-003	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_walla_human_footsteps-003_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Speed\Footsteps_Walk\sfx_walla_human_footsteps-003		29170
+	1057437662	sfx_camera	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_camera_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_camera		174644
+	1062291007	sfx_ambiance_floorcrack	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_ambiance_floorcrack_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Planche_craque\sfx_ambiance_floorcrack		231202
+	1070246284	sfx_action_door_opening_01	C:\Users\Marc Antoine\Desktop\LesVoyeurs\Sound\voyeursjuveniles\.cache\Windows\SFX\sfx_action_door_opening_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Porte_Ouvre\sfx_action_door_opening_01		101494
+

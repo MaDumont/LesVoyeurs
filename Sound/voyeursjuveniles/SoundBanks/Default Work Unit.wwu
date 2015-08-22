@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{83210D03-6B49-4D8B-BAB1-885C4E05A5F8}" SchemaVersion="70">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{83210D03-6B49-4D8B-BAB1-885C4E05A5F8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{83210D03-6B49-4D8B-BAB1-885C4E05A5F8}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="vjsoundbank" ID="{00ACD659-FF55-4FF9-ABD3-DE7813FB9904}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Interactive Music Hierarchy" ID="{49FED366-B530-42A8-993B-924873AAB707}" WorkUnitID="{49FED366-B530-42A8-993B-924873AAB707}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Actor-Mixer Hierarchy" ID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" WorkUnitID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" WorkUnitID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

@@ -1,6 +1,1063 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}" SchemaVersion="70">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="sfx_impact_window" ID="{EDAC9320-5C1F-4C62-B7F9-E77F90C21318}" ShortID="7137166" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="sfx_impact_window" ID="{5EFC2263-254B-4D4A-A3E4-54DDEE0D215A}" ShortID="311205504">
+							<Language>SFX</Language>
+							<AudioFile>sfx_impact_window.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="sfx_impact_window" ID="{5EFC2263-254B-4D4A-A3E4-54DDEE0D215A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Porte_Ouvre" ID="{DC4973BE-47B0-4F1E-9019-E264FE6AFC60}" ShortID="266085856">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{FA21A394-A10A-408F-97FE-838549F65006}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="278"/>
+											<Property Name="Min" Type="Real64" Value="-227"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_action_door_opening_01" ID="{2F8CC9CB-1E18-4D9E-A454-537F76D628D2}" ShortID="813775830" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_action_door_opening_01" ID="{EC96310B-80ED-49E2-A9CB-102FEB9D3348}" ShortID="1070246284">
+									<Language>SFX</Language>
+									<AudioFile>sfx_action_door_opening_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_action_door_opening_01" ID="{EC96310B-80ED-49E2-A9CB-102FEB9D3348}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_action_door_opening_02" ID="{C5A93C2B-2554-4EBB-B954-35F345CE468C}" ShortID="401614665" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_action_door_opening_02" ID="{307D83D4-2A8E-47B1-A841-63A4A5ADD987}" ShortID="719800033">
+									<Language>SFX</Language>
+									<AudioFile>sfx_action_door_opening_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_action_door_opening_02" ID="{307D83D4-2A8E-47B1-A841-63A4A5ADD987}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_action_door_opening_03" ID="{853C7C3C-911A-4642-A36A-685DFC6AA894}" ShortID="829708997" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_action_door_opening_03" ID="{2688AAC7-8051-4EA1-8AED-67FD5120C26D}" ShortID="417555839">
+									<Language>SFX</Language>
+									<AudioFile>sfx_action_door_opening_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_action_door_opening_03" ID="{2688AAC7-8051-4EA1-8AED-67FD5120C26D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_action_door_opening_04" ID="{F8B52EA5-95CC-487C-994F-94792579B56F}" ShortID="357451845" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_action_door_opening_04" ID="{87232FA9-D084-49C2-96FC-C5DAEFCFC065}" ShortID="24340544">
+									<Language>SFX</Language>
+									<AudioFile>sfx_action_door_opening_04.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_action_door_opening_04" ID="{87232FA9-D084-49C2-96FC-C5DAEFCFC065}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Porte_Ferme" ID="{0675FCDF-D944-40A2-8FF7-4B8CDBBABE14}" ShortID="273429921">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D36A0246-4A3A-4904-8301-A40AB0DEB6BD}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="278"/>
+											<Property Name="Min" Type="Real64" Value="-227"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_action_door_closing_01" ID="{75123A29-62D3-46ED-AC7E-D9E871AAC41A}" ShortID="127212025" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_action_door_closing_01" ID="{1A25B18B-ACB4-4F31-9768-D0A14E542DE4}" ShortID="89807300">
+									<Language>SFX</Language>
+									<AudioFile>sfx_action_door_closing_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_action_door_closing_01" ID="{1A25B18B-ACB4-4F31-9768-D0A14E542DE4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_action_door_closing_02" ID="{AC13ED43-5BDB-4DFB-9837-E46E7D98044F}" ShortID="911005372" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_action_door_closing_02" ID="{17D3813F-80FE-49D9-B0AD-0207D32610EE}" ShortID="680067133">
+									<Language>SFX</Language>
+									<AudioFile>sfx_action_door_closing_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_action_door_closing_02" ID="{17D3813F-80FE-49D9-B0AD-0207D32610EE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_action_door_closing_03" ID="{CA32BC0B-B3BD-4571-A80D-7746B079356A}" ShortID="181524142" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_action_door_closing_03" ID="{F85F4DED-BAAD-4341-A0C4-C0BD061390D7}" ShortID="417809380">
+									<Language>SFX</Language>
+									<AudioFile>sfx_action_door_closing_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_action_door_closing_03" ID="{F85F4DED-BAAD-4341-A0C4-C0BD061390D7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_action_door_closing_04" ID="{B022F6DA-457C-4FD0-97CB-9AC445005654}" ShortID="705179378" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_action_door_closing_04" ID="{1A0253B1-CEC8-4673-A543-2CE50FAFBA33}" ShortID="184106530">
+									<Language>SFX</Language>
+									<AudioFile>sfx_action_door_closing_04.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_action_door_closing_04" ID="{1A0253B1-CEC8-4673-A543-2CE50FAFBA33}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<SwitchContainer Name="Footsteps_Speed" ID="{F843CE2C-DA46-4992-8C25-C947154F9643}" ShortID="888324944">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Footsteps_Run" ID="{B37B9EB7-A2A0-4796-8895-EDA0DC546861}" ShortID="90005651">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CA9EEA2F-A1CC-466A-BDD3-8413BB341F05}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="7"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CC3A8F3F-AE91-4658-901A-58B8399555D5}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-15"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8BBB8468-CF49-4C58-9B75-1AEB30CFC3C3}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="632"/>
+													<Property Name="Min" Type="Real64" Value="-1389"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{55C8F3AE-EEE9-486F-8572-5B83551165E9}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="4"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_walla_human_footsteps_run-001" ID="{8DCBC8CB-5169-4CF5-AE53-97FABE88FC4B}" ShortID="209113847" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_walla_human_footsteps_run-001" ID="{BE57708E-4BC9-452F-BCCF-078EF87A93BD}" ShortID="207537850">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.209124726477024"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0843982494529541"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.323041575492341"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_walla_human_footsteps_run-001.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_walla_human_footsteps_run-001" ID="{BE57708E-4BC9-452F-BCCF-078EF87A93BD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_walla_human_footsteps_run-002" ID="{1717FF87-68F5-438E-8687-07BB92DFD1F5}" ShortID="574914827" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_walla_human_footsteps_run-002" ID="{53C48C41-9003-4016-B7FD-17A1A1D3BC5F}" ShortID="443444411">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.128894967177243"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0707658643326039"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.272592997811816"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_walla_human_footsteps_run-002.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_walla_human_footsteps_run-002" ID="{53C48C41-9003-4016-B7FD-17A1A1D3BC5F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_walla_human_footsteps_run-003" ID="{7268190F-7499-4FD4-9188-1CB96DD01896}" ShortID="780462501" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_walla_human_footsteps_run-003" ID="{A60381AD-84E3-44AE-8843-6E859892D418}" ShortID="406352138">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.135536105032823"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0615317286652079"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.289781181619256"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_walla_human_footsteps_run-003.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_walla_human_footsteps_run-003" ID="{A60381AD-84E3-44AE-8843-6E859892D418}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_walla_human_footsteps_run-004" ID="{6805AD04-DD42-4C21-9F18-108B9FAF732C}" ShortID="776979584" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_walla_human_footsteps_run-004" ID="{8E4FD809-0F0F-45DB-B73A-55C6612BF795}" ShortID="938746417">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00237417943107221"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.13464989059081"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0674945295404814"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.25980306345733"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_walla_human_footsteps_run-004.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_walla_human_footsteps_run-004" ID="{8E4FD809-0F0F-45DB-B73A-55C6612BF795}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Footsteps_Walk" ID="{E6505633-6B95-4122-8CED-3EE626331424}" ShortID="151821794">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{70FB6394-E944-4F0E-BE64-36B3D3BAA168}">
+												<PropertyList>
+													<Property Name="Min" Type="Real64" Value="-227"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-29</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{36F879D4-3218-4270-B22C-D266DE43F972}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_walla_human_footsteps-001" ID="{277CA087-7EFD-424F-ACD0-4E2FFA8B9495}" ShortID="86907944" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_walla_human_footsteps-001" ID="{B830094E-8884-4219-A6AE-0B46FEF12EBE}" ShortID="304962795">
+											<Language>SFX</Language>
+											<AudioFile>sfx_walla_human_footsteps-001.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_walla_human_footsteps-001" ID="{B830094E-8884-4219-A6AE-0B46FEF12EBE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_walla_human_footsteps-002" ID="{ACC233AA-E857-4B48-9E16-76E1D08108C2}" ShortID="545652513" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_walla_human_footsteps-002" ID="{6D68F35C-E8A7-4B35-8E4C-C5FD33F5C790}" ShortID="258489339">
+											<Language>SFX</Language>
+											<AudioFile>sfx_walla_human_footsteps-002.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_walla_human_footsteps-002" ID="{6D68F35C-E8A7-4B35-8E4C-C5FD33F5C790}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_walla_human_footsteps-003" ID="{C5875ACA-05D4-4C87-B07C-F70D387DF51B}" ShortID="1045283370" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_walla_human_footsteps-003" ID="{2EDE7FA0-965A-4B03-8DFE-D8FEF2B6A65E}" ShortID="1049477809">
+											<Language>SFX</Language>
+											<AudioFile>sfx_walla_human_footsteps-003.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_walla_human_footsteps-003" ID="{2EDE7FA0-965A-4B03-8DFE-D8FEF2B6A65E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_walla_human_footsteps-004" ID="{83288AB6-2F50-4629-9F76-64D8297EC24F}" ShortID="811603278" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_walla_human_footsteps-004" ID="{2D8F2EF2-9688-48D1-AE40-EAFE94B35C22}" ShortID="927288190">
+											<Language>SFX</Language>
+											<AudioFile>sfx_walla_human_footsteps-004.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_walla_human_footsteps-004" ID="{2D8F2EF2-9688-48D1-AE40-EAFE94B35C22}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_walla_human_footsteps-005" ID="{8C8B4697-B85C-4FB2-9DA1-3C13177F13FF}" ShortID="767730786" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_walla_human_footsteps-005" ID="{78C122F5-BFBF-40A8-855A-42D14EA36A81}" ShortID="496202461">
+											<Language>SFX</Language>
+											<AudioFile>sfx_walla_human_footsteps-005.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_walla_human_footsteps-005" ID="{78C122F5-BFBF-40A8-855A-42D14EA36A81}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupRef Name="Footsteps_speed" ID="{A807D5AF-0E7F-4F4C-AE48-86741AE1BB67}"/>
+						<DefaultSwitchRef Name="Walk" ID="{2A5447A0-F907-46B6-9B90-6D408ACED2B2}"/>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Footsteps_Walk" ID="{E6505633-6B95-4122-8CED-3EE626331424}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Footsteps_Run" ID="{B37B9EB7-A2A0-4796-8895-EDA0DC546861}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Run" ID="{D48B6445-C6E1-4C1F-815D-32BC49C6A9C0}"/>
+								<ItemList>
+									<ItemRef Name="Footsteps_Run" ID="{B37B9EB7-A2A0-4796-8895-EDA0DC546861}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Walk" ID="{2A5447A0-F907-46B6-9B90-6D408ACED2B2}"/>
+								<ItemList>
+									<ItemRef Name="Footsteps_Walk" ID="{E6505633-6B95-4122-8CED-3EE626331424}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<RandomSequenceContainer Name="Chien_Jappement" ID="{7035EC7B-D85E-48C1-B706-B2209D86CDB2}" ShortID="641823978">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4C3B9CFD-5854-4F5B-B78A-2F1A53B1FFBE}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="202"/>
+											<Property Name="Min" Type="Real64" Value="-202"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_walla_chien_jappement_01" ID="{D4388C3F-19D1-40D8-87A7-05ECB1052088}" ShortID="672020665" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_walla_chien_jappement_01" ID="{C0AEEFBA-8DDE-422B-8FC8-56F5BB9A780D}" ShortID="681265171">
+									<Language>SFX</Language>
+									<AudioFile>sfx_walla_chien_jappement_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_walla_chien_jappement_01" ID="{C0AEEFBA-8DDE-422B-8FC8-56F5BB9A780D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_walla_chien_jappement_02" ID="{D74BE3CA-1A65-4C75-BE29-47DFAB5877E9}" ShortID="769281256" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_walla_chien_jappement_02" ID="{DA746172-039C-4C0F-93E4-E66B8C0FFA78}" ShortID="616951461">
+									<Language>SFX</Language>
+									<AudioFile>sfx_walla_chien_jappement_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_walla_chien_jappement_02" ID="{DA746172-039C-4C0F-93E4-E66B8C0FFA78}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_walla_chien_jappement_03" ID="{48F16758-22A0-42C2-9D43-40C11EA7E628}" ShortID="88521577" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_walla_chien_jappement_03" ID="{352E5B25-E43C-48DB-BD5B-A30E311A1890}" ShortID="210994172">
+									<Language>SFX</Language>
+									<AudioFile>sfx_walla_chien_jappement_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_walla_chien_jappement_03" ID="{352E5B25-E43C-48DB-BD5B-A30E311A1890}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_walla_chien_jappementlong_01" ID="{AC38D757-70C4-4C6D-9E98-194AB154850F}" ShortID="195416524" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_walla_chien_jappementlong_01" ID="{DC646870-3A1B-47F4-A540-D416EC976BDB}" ShortID="902191248">
+									<Language>SFX</Language>
+									<AudioFile>sfx_walla_chien_jappementlong_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_walla_chien_jappementlong_01" ID="{DC646870-3A1B-47F4-A540-D416EC976BDB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_walla_chien_jappementlong_02" ID="{772948E3-A385-43E9-BBBE-17307A59AC54}" ShortID="693636357" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_walla_chien_jappementlong_02" ID="{E89FE40A-7349-4579-BC11-69BF16AA77C2}" ShortID="748933475">
+									<Language>SFX</Language>
+									<AudioFile>sfx_walla_chien_jappementlong_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_walla_chien_jappementlong_02" ID="{E89FE40A-7349-4579-BC11-69BF16AA77C2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Homme_Hey" ID="{1FBE1814-F4F5-49EB-874C-4B5B6DD5505A}" ShortID="754201743">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{C04E429C-AAB9-4297-BC32-5AB0AC89BDB1}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="278"/>
+											<Property Name="Min" Type="Real64" Value="-253"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_walla_human_hey_01" ID="{15DBCC52-1E83-407D-A2FF-C165304FE205}" ShortID="330148651" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_walla_human_hey_01" ID="{80E6A4BA-FF24-4EAB-ABC3-459B36AD418B}" ShortID="791901746">
+									<Language>SFX</Language>
+									<AudioFile>sfx_walla_human_hey_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_walla_human_hey_01" ID="{80E6A4BA-FF24-4EAB-ABC3-459B36AD418B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_walla_human_hey_02" ID="{DA747443-7279-462E-B397-5D75778889DB}" ShortID="236414195" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_walla_human_hey_02" ID="{FB55A6B2-30C7-430E-978C-0F4A424A860E}" ShortID="147817659">
+									<Language>SFX</Language>
+									<AudioFile>sfx_walla_human_hey_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_walla_human_hey_02" ID="{FB55A6B2-30C7-430E-978C-0F4A424A860E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Enfant_Surpris" ID="{6C1FFCFB-9F07-4879-ACBB-7B42945AA66F}" ShortID="927841017">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{C724971E-9941-46C3-88D7-D9F9D7621A01}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="278"/>
+											<Property Name="Min" Type="Real64" Value="-253"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_walla_human_scream_01" ID="{FD27BE25-34AD-407E-B9AD-10875C301525}" ShortID="813563575" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_walla_human_scream_01" ID="{285D929D-FC70-4DEF-9C41-56CB9AD7F6DD}" ShortID="118536100">
+									<Language>SFX</Language>
+									<AudioFile>sfx_walla_human_scream_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_walla_human_scream_01" ID="{285D929D-FC70-4DEF-9C41-56CB9AD7F6DD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_walla_human_scream_02" ID="{C361BE54-E48C-4AAA-944F-76FCE6E517D8}" ShortID="820475600" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_walla_human_scream_02" ID="{9050F9F2-326E-4ABC-B244-EA7A6E2054C6}" ShortID="1001971756">
+									<Language>SFX</Language>
+									<AudioFile>sfx_walla_human_scream_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_walla_human_scream_02" ID="{9050F9F2-326E-4ABC-B244-EA7A6E2054C6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_walla_human_scream_03" ID="{81556B15-9972-4750-8021-4BF33CF6436B}" ShortID="688667043" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_walla_human_scream_03" ID="{377DD993-5F4A-4BF5-A2FD-7516AF60FF87}" ShortID="567395612">
+									<Language>SFX</Language>
+									<AudioFile>sfx_walla_human_scream_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_walla_human_scream_03" ID="{377DD993-5F4A-4BF5-A2FD-7516AF60FF87}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Respiration_Profonde" ID="{2B689CF4-DA3D-4CAE-9703-3E0BFE5A4521}" ShortID="901977348">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_walla_humain_respiration_01" ID="{951C68A9-4A97-4C29-A851-0BD1D1FCC799}" ShortID="712103445" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_walla_humain_respiration_01" ID="{88EE3808-663E-4A1C-8411-5DAD92168FF3}" ShortID="701939739">
+									<Language>SFX</Language>
+									<AudioFile>sfx_walla_humain_respiration_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_walla_humain_respiration_01" ID="{88EE3808-663E-4A1C-8411-5DAD92168FF3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_walla_humain_respiration_02" ID="{317C451F-EDEA-42BA-8E6F-870A414A93DD}" ShortID="543773306" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_walla_humain_respiration_02" ID="{CE6896F4-0AB5-4C80-BDBC-657332E7D05E}" ShortID="767655642">
+									<Language>SFX</Language>
+									<AudioFile>sfx_walla_humain_respiration_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_walla_humain_respiration_02" ID="{CE6896F4-0AB5-4C80-BDBC-657332E7D05E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_walla_humain_respiration_03" ID="{61874D34-3398-4D06-B70B-C2E6AFAC954D}" ShortID="958409256" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_walla_humain_respiration_03" ID="{FEE263D3-717D-4FF9-BD9E-A1AE2E8AE737}" ShortID="237706136">
+									<Language>SFX</Language>
+									<AudioFile>sfx_walla_humain_respiration_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_walla_humain_respiration_03" ID="{FEE263D3-717D-4FF9-BD9E-A1AE2E8AE737}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="sfx_ambiance_tv_noise_01" ID="{06AC8EAF-BE84-4261-9C18-0F373C354A7F}" ShortID="501313482" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="sfx_ambiance_tv_noise_01" ID="{9A455298-FF7E-4828-8C51-B5F17DF3BFDA}" ShortID="235775106">
+							<Language>SFX</Language>
+							<AudioFile>sfx_ambiance_tv_noise_01.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="sfx_ambiance_tv_noise_01" ID="{9A455298-FF7E-4828-8C51-B5F17DF3BFDA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="sfx_ambiance_tictac" ID="{FBDA29BA-D9EB-43D0-93CD-439ECFA20502}" ShortID="42558113" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="sfx_ambiance_tictac" ID="{3F57B923-3DCF-4F81-84DC-F69F26302829}" ShortID="271594494">
+							<Language>SFX</Language>
+							<AudioFile>sfx_ambiance_tictac.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="sfx_ambiance_tictac" ID="{3F57B923-3DCF-4F81-84DC-F69F26302829}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Planche_craque" ID="{0F4BB3CD-954A-4F46-843D-33882923A374}" ShortID="34468971">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{84CD0BDF-BB82-4F19-8D77-CD77C8E5B2B6}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="152"/>
+											<Property Name="Min" Type="Real64" Value="-101"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_ambiance_floorcrack-001" ID="{DCC438B0-D8EB-4E1A-9BC8-FBAF7E59E867}" ShortID="1031758874" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ambiance_floorcrack-001" ID="{7F329B5A-D398-4A83-96CF-9B7F3F5D9E91}" ShortID="856207489">
+									<Language>SFX</Language>
+									<AudioFile>sfx_ambiance_floorcrack-001.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ambiance_floorcrack-001" ID="{7F329B5A-D398-4A83-96CF-9B7F3F5D9E91}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_ambiance_floorcrack-002" ID="{3209B52A-DAC7-4784-87CC-B5434196B3D0}" ShortID="319000815" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ambiance_floorcrack-002" ID="{1E20CA2B-52F3-4A53-96A8-4C8FD86CB462}" ShortID="439613278">
+									<Language>SFX</Language>
+									<AudioFile>sfx_ambiance_floorcrack-002.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ambiance_floorcrack-002" ID="{1E20CA2B-52F3-4A53-96A8-4C8FD86CB462}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_ambiance_floorcrack" ID="{D2EDE383-6F63-45BB-AA1C-6D044EF4B141}" ShortID="289663699" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ambiance_floorcrack" ID="{3781D836-967D-4400-B442-F0E28C973881}" ShortID="1062291007">
+									<Language>SFX</Language>
+									<AudioFile>sfx_ambiance_floorcrack.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ambiance_floorcrack" ID="{3781D836-967D-4400-B442-F0E28C973881}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="sfx_camera" ID="{B8DFD6C9-3D4A-43CE-85A4-69BAA28463CF}" ShortID="300011441" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DD6056E2-08FB-4A49-B4D4-0AA6753E10E6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{507C1F72-95D7-418E-A525-12064DBED25E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="sfx_camera" ID="{13E32926-84B8-46B3-9F67-1353B9101334}" ShortID="1057437662">
+							<Language>SFX</Language>
+							<AudioFile>sfx_camera.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="sfx_camera" ID="{13E32926-84B8-46B3-9F67-1353B9101334}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
