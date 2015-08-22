@@ -48,6 +48,10 @@ public class VoyeurScript : MonoBehaviour {
 			anim.SetBool("camera", true);
 			TakingPicture = true;
 		} else if (targetAcquire) {
+			if(visionCone.status == FOV2DVisionCone.Status.Suspicious)
+			{
+				TakePicture();
+			}
 			anim.SetBool("camera", false);
 			TakingPicture = false;
 			visionCone.status = FOV2DVisionCone.Status.Alert;
@@ -64,6 +68,16 @@ public class VoyeurScript : MonoBehaviour {
 		System.Collections.Generic.HashSet<string> targets = new HashSet<string> ();
 
 	 	targetAcquire = false;
+		CalculatePoints (false);
+	}
+
+	void TakePicture()
+	{
+		CalculatePoints (true);
+	}
+
+	void CalculatePoints(bool isPhoto)
+	{
 		ArrayList targetHits = new ArrayList ();
 		foreach (RaycastHit hit in eyes.hits) 
 		{
@@ -71,7 +85,12 @@ public class VoyeurScript : MonoBehaviour {
 			{
 				targetAcquire = true;
 				targetHits.Add(hit.transform.gameObject.GetHashCode());
-				int points = (int)(Mathf.Pow(2, 2 * eyes.fovMaxDistance/hit.distance));
+				int points = (int)(Mathf.Min(10, 20 * Mathf.Max(0f, 1 - hit.distance/eyes.fovMaxDistance)));
+				if(isPhoto)
+				{
+					points *= 100;
+				}
+				Debug.Log(points.ToString() + " points");
 				GameManager.getInstance().updatePoints(points);
 			}
 		}

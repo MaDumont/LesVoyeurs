@@ -9,6 +9,8 @@ public class GuardScript : MonoBehaviour {
 	FOV2DEyes eyes;
 	FOV2DVisionCone visionCone;
 	Animator anim;
+	Vector3 lastSeen;
+	bool chasePlayer;
 
 	enum State {IDLE, WALK, ALERT};
 	State currentState;
@@ -44,6 +46,7 @@ public class GuardScript : MonoBehaviour {
 			anim.SetBool ("Move", false);
 			anim.SetBool ("Detect", true);
 			agent.Stop ();
+			chasePlayer = true;
 		}
 	}
 
@@ -72,15 +75,20 @@ public class GuardScript : MonoBehaviour {
 	void GotoNextPoint() {
 
 		// Returns if no points have been set up
-		if (points.Length == 0)
+		if (points.Length == 0 && lastSeen == null)
 			return;
+
+		if (lastSeen != null && chasePlayer) {
+			agent.destination = lastSeen;
+			chasePlayer = false;
+		} else {
+			// Set the agent to go to the currently selected destination.
+			agent.destination = points [destPoint].position;
 		
-		// Set the agent to go to the currently selected destination.
-		agent.destination = points[destPoint].position;
-		
-		// Choose the next point in the array as the destination,
-		// cycling to the start if necessary.
-		destPoint = (destPoint + 1) % points.Length;
+			// Choose the next point in the array as the destination,
+			// cycling to the start if necessary.
+			destPoint = (destPoint + 1) % points.Length;
+		}
 	}
 	
 	
@@ -98,6 +106,7 @@ public class GuardScript : MonoBehaviour {
 		foreach (RaycastHit hit in eyes.hits) {
 			if (hit.transform && hit.transform.tag == "Player") {
 				alert = true;
+				lastSeen = hit.collider.gameObject.transform.position;
 			}
 		}
 
