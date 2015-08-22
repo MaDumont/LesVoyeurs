@@ -54,11 +54,16 @@ public class VoyeurScript : MonoBehaviour {
 
 	void CheckVision(){
 	 	targetAcquire = false;
-		foreach (RaycastHit hit in eyes.hits) {
-			if (hit.transform && hit.transform.tag == "Girl") {
+		ArrayList targetHits = new ArrayList ();
+		foreach (RaycastHit hit in eyes.hits) 
+		{
+			if (hit.transform && hit.transform.tag == "Girl" && !targetHits.Contains(hit.transform.gameObject.GetHashCode())) 
+			{
 				targetAcquire = true;
+				targetHits.Add(hit.transform.gameObject.GetHashCode());
+				int points = (int)(Mathf.Pow(2, 2 * eyes.fovMaxDistance/hit.distance));
+				GameManager.getInstance().updatePoints(points);
 			}
 		}
-
 	}
 }
