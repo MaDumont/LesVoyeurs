@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 81747d93432f97443842b0f318d136b9
+timeCreated: 1440271401
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: biblio1
+    100004: biblio2
+    100006: biblio3
+    100008: cadre_porte_1x2
+    100010: Object002
+    100012: Object003
+    100014: Object004
+    100016: Object005
+    100018: Table basse
+    100020: Table chevet
+    100022: Table diner
+    100024: wall_8x006
+    100026: wall_8x007
+    100028: wall_8x008
+    100030: wall_8x009
+    400000: //RootNode
+    400002: biblio1
+    400004: biblio2
+    400006: biblio3
+    400008: cadre_porte_1x2
+    400010: Object002
+    400012: Object003
+    400014: Object004
+    400016: Object005
+    400018: Table basse
+    400020: Table chevet
+    400022: Table diner
+    400024: wall_8x006
+    400026: wall_8x007
+    400028: wall_8x008
+    400030: wall_8x009
+    2300000: biblio1
+    2300002: biblio2
+    2300004: biblio3
+    2300006: cadre_porte_1x2
+    2300008: Object002
+    2300010: Object003
+    2300012: Object004
+    2300014: Object005
+    2300016: Table basse
+    2300018: Table chevet
+    2300020: Table diner
+    2300022: wall_8x006
+    2300024: wall_8x007
+    2300026: wall_8x008
+    2300028: wall_8x009
+    3300000: biblio1
+    3300002: biblio2
+    3300004: biblio3
+    3300006: cadre_porte_1x2
+    3300008: Object002
+    3300010: Object003
+    3300012: Object004
+    3300014: Object005
+    3300016: Table basse
+    3300018: Table chevet
+    3300020: Table diner
+    3300022: wall_8x006
+    3300024: wall_8x007
+    3300026: wall_8x008
+    3300028: wall_8x009
+    4300000: cadre_porte_1x2
+    4300002: Table chevet
+    4300004: Table basse
+    4300006: Table diner
+    4300008: biblio3
+    4300010: Object002
+    4300012: Object003
+    4300014: Object004
+    4300016: Object005
+    4300018: wall_8x006
+    4300020: wall_8x007
+    4300022: wall_8x008
+    4300024: wall_8x009
+    4300026: biblio1
+    4300028: biblio2
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
