@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
 	private static int winCondition;
 	private GameState gamestate;
 	private ArrayList pointsListeners;
+    public SoundManager soundManager;
 
 	public static GameManager getInstance()
 	{
@@ -51,7 +52,7 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        		
 	}
 	
 	// Update is called once per frame

@@ -20,6 +20,138 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="LevelComplete" ID="{7DECB181-B124-4048-8355-89C0128959A6}">
+					<ChildrenList>
+						<Action Name="Play" ID="{6C851038-9CBE-42E0-A120-53C8BC83456B}" ShortID="182747192" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{12D606C6-4E8D-4BB9-9FB3-C550ADEECCD8}" Global="false">
+									<ObjectRef Name="sfx_impact_window" ID="{EDAC9320-5C1F-4C62-B7F9-E77F90C21318}" WorkUnitID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Porte_Ouvre" ID="{D99A51A2-889D-4D9D-9CAA-CAB0ED558297}">
+					<ChildrenList>
+						<Action Name="Play" ID="{EFF524FA-BD15-42E0-8E58-8423F98C1918}" ShortID="1009699901" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{88DC72EE-ACD4-4E37-B20D-4512F14AB477}" Global="false">
+									<ObjectRef Name="Porte_Ouvre" ID="{DC4973BE-47B0-4F1E-9019-E264FE6AFC60}" WorkUnitID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Porte_Ferme" ID="{354EFDB5-51E9-452E-A0BB-63CE4C97E44A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{5EA596BC-F7C8-4DCA-A290-D39AAD96B8C6}" ShortID="360408653" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{F68FE0CA-7236-4367-AA61-85DD2240D3E0}" Global="false">
+									<ObjectRef Name="Porte_Ferme" ID="{0675FCDF-D944-40A2-8FF7-4B8CDBBABE14}" WorkUnitID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footsteps" ID="{52738EAB-49CD-49FC-BCC7-FA99BE26ECF9}">
+					<ChildrenList>
+						<Action Name="Play" ID="{78CF3E99-7602-412E-8068-304F3F3F46F5}" ShortID="1045304892" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{BF21F2BE-E27D-4194-ABDE-F64D697D43DA}" Global="false">
+									<ObjectRef Name="Footsteps_Speed" ID="{F843CE2C-DA46-4992-8C25-C947154F9643}" WorkUnitID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Chien_Jappe" ID="{4F373231-CB19-47E2-9127-A384E58F282A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CB63F75E-F2D5-4E59-A245-B3D69568621F}" ShortID="797789186" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6C6275A7-C73A-4CAF-A858-4AB58E1C1A4E}" Global="false">
+									<ObjectRef Name="Chien_Jappement" ID="{7035EC7B-D85E-48C1-B706-B2209D86CDB2}" WorkUnitID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Homme_Hey" ID="{6696A57C-D70E-427A-AC83-E3F2FF4666F5}">
+					<ChildrenList>
+						<Action Name="Play" ID="{F08C51CD-C1CB-4F73-8C92-69890E9D887D}" ShortID="221619181" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{FD47FE6E-7FAA-432F-A08B-FD225328EB10}" Global="false">
+									<ObjectRef Name="Homme_Hey" ID="{1FBE1814-F4F5-49EB-874C-4B5B6DD5505A}" WorkUnitID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Enfants_Surpris" ID="{C37D3B28-6BF1-4748-A186-57D74957AC7E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{EFD8B8CA-957F-4AAA-ABB0-68036FBF4462}" ShortID="995581879" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{19958CE5-A5E9-4790-A582-CAEA8271C282}" Global="false">
+									<ObjectRef Name="Enfant_Surpris" ID="{6C1FFCFB-9F07-4879-ACBB-7B42945AA66F}" WorkUnitID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Respiration_Profonde" ID="{04B494EB-F4B8-42D2-8186-3DEA406E2B58}">
+					<ChildrenList>
+						<Action Name="Play" ID="{942B94B9-474C-408B-ABB7-4CB5078BF16E}" ShortID="128054919" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{81D54B31-3570-41A9-9315-F9B5A8381620}" Global="false">
+									<ObjectRef Name="Respiration_Profonde" ID="{2B689CF4-DA3D-4CAE-9703-3E0BFE5A4521}" WorkUnitID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Television_Noise" ID="{49EC88B8-F8F7-4373-82E7-93A423F784DA}">
+					<ChildrenList>
+						<Action Name="Play" ID="{28B4D710-592A-4A74-89DF-007E218E10D4}" ShortID="714184785" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{DC682AF1-FF9F-4010-89F5-81C0E518CE6A}" Global="false">
+									<ObjectRef Name="sfx_ambiance_tv_noise_01" ID="{06AC8EAF-BE84-4261-9C18-0F373C354A7F}" WorkUnitID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Horloge" ID="{F2AD3905-7386-4838-9B7A-0AF72BF00A92}">
+					<ChildrenList>
+						<Action Name="Play" ID="{7CC9BE90-524A-4DE1-BC9A-0AE43BB550F9}" ShortID="591199986" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{75D6144E-697C-4FEE-9F2B-2C675BEF2998}" Global="false">
+									<ObjectRef Name="sfx_ambiance_tictac" ID="{FBDA29BA-D9EB-43D0-93CD-439ECFA20502}" WorkUnitID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Planche_craque" ID="{7950FECB-5FBF-485A-B021-FAB471296E68}">
+					<ChildrenList>
+						<Action Name="Play" ID="{4B843D38-DBA5-4AE5-ABDB-FA7FB0C669E3}" ShortID="326531316" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{AC42C647-1E1D-475F-9EC4-F0612C395294}" Global="false">
+									<ObjectRef Name="Planche_craque" ID="{0F4BB3CD-954A-4F46-843D-33882923A374}" WorkUnitID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Camera" ID="{1D5EC9C3-1AC9-4500-AB75-DEDD76B101F3}">
+					<ChildrenList>
+						<Action Name="Play" ID="{7A8F2F23-D475-4CD2-A338-4D542BF3C4D3}" ShortID="155332437" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{AA5F3C33-1127-4DE9-B1A8-C0DEE6DDC6E8}" Global="false">
+									<ObjectRef Name="sfx_camera" ID="{B8DFD6C9-3D4A-43CE-85A4-69BAA28463CF}" WorkUnitID="{C29B20E9-0F95-48B5-B9EF-85DC112822B1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
