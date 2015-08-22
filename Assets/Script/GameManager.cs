@@ -6,9 +6,12 @@ public class GameManager : MonoBehaviour {
 
 	private static GameManager instance = null;
 	private int points;
+	public float Timer = 10f;
+	private float timeRemaining;
 	private static int winCondition;
 	private GameState gamestate;
 	private ArrayList pointsListeners;
+	private bool gameOver = false;
 
 	public static GameManager getInstance()
 	{
@@ -39,7 +42,7 @@ public class GameManager : MonoBehaviour {
 	//Initializes the game for each level.
 	void InitGame()
 	{
-
+		timeRemaining = Timer;
 	}
 
 	private GameManager()
@@ -53,9 +56,19 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		
 	}
+
+	void GameOver(){
+		timeRemaining = 0.0f;
+		gameOver = true;
+	}
 	
 	// Update is called once per frame
 	void Update () {
+		if(!gameOver)
+			timeRemaining -= Time.deltaTime;
+
+		if (timeRemaining <= 0)
+			GameOver ();
 	}
 
 	public void updatePoints(int delta)
@@ -64,6 +77,18 @@ public class GameManager : MonoBehaviour {
 		foreach (MonoBehaviour listener in pointsListeners) 
 		{
 			listener.SendMessage("updateScore", points.ToString());
+		}
+	}
+
+	void OnGUI()
+	{
+		var x = Screen.width/2 - 50;
+		GUI.Box(new Rect(x,0,100,25),timeRemaining.ToString("#.00"));
+
+		if(gameOver){
+			x = Screen.width/2 - 50;
+			var y = Screen.height / 2 - 50;
+			GUI.Box (new Rect (x, y, 100, 25), "Game Over!");
 		}
 	}
 

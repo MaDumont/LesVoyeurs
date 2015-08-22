@@ -1,16 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class VoyeurScript : MonoBehaviour {
 
-	public float Speed;
+    public float Speed;
 	public float TurnSpeed;
 	FOV2DEyes eyes;
 	FOV2DVisionCone visionCone;
 	Animator anim;
 	bool targetAcquire = false;
 
+	public bool TakingPicture = false;
+
 	private Rigidbody _rigidBody;
+
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +24,7 @@ public class VoyeurScript : MonoBehaviour {
 		visionCone = GetComponentInChildren<FOV2DVisionCone>();
 
 		InvokeRepeating ("CheckVision", 0, 0.3f);
+        
 	}
 	
 	// Update is called once per frame
@@ -41,15 +46,18 @@ public class VoyeurScript : MonoBehaviour {
 		if (targetAcquire && Input.GetMouseButton (0)) {
 			visionCone.status = FOV2DVisionCone.Status.Suspicious;
 			anim.SetBool("camera", true);
+			TakingPicture = true;
 		} else if (targetAcquire) {
 			if(visionCone.status == FOV2DVisionCone.Status.Suspicious)
 			{
 				TakePicture();
 			}
 			anim.SetBool("camera", false);
+			TakingPicture = false;
 			visionCone.status = FOV2DVisionCone.Status.Alert;
 		}else{
 			anim.SetBool("camera", false);
+			TakingPicture = false;
 			visionCone.status = FOV2DVisionCone.Status.Idle;
 		}
 
@@ -57,6 +65,8 @@ public class VoyeurScript : MonoBehaviour {
 	}
 
 	void CheckVision(){
+		System.Collections.Generic.HashSet<string> targets = new HashSet<string> ();
+
 	 	targetAcquire = false;
 		CalculatePoints (false);
 	}
@@ -85,4 +95,5 @@ public class VoyeurScript : MonoBehaviour {
 			}
 		}
 	}
+
 }
