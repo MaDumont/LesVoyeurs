@@ -62,12 +62,16 @@ public class VoyeurScript : MonoBehaviour {
 		System.Collections.Generic.HashSet<string> targets = new HashSet<string> ();
 
 	 	targetAcquire = false;
-		foreach (RaycastHit hit in eyes.hits) {
-			if (hit.transform && hit.transform.tag == "Girl") {
-				targets.Add(hit.transform.name);
+		ArrayList targetHits = new ArrayList ();
+		foreach (RaycastHit hit in eyes.hits) 
+		{
+			if (hit.transform && hit.transform.tag == "Girl" && !targetHits.Contains(hit.transform.gameObject.GetHashCode())) 
+			{
 				targetAcquire = true;
+				targetHits.Add(hit.transform.gameObject.GetHashCode());
+				int points = (int)(Mathf.Pow(2, 2 * eyes.fovMaxDistance/hit.distance));
+				GameManager.getInstance().updatePoints(points);
 			}
 		}
-
 	}
 }
