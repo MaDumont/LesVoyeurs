@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: 6630a01da4c98fb429a6de1daca92ae7
+timeCreated: 1440250391
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Box079
+    100002: Box080
+    100004: Box085
+    100006: Box086
+    100008: Box087
+    100010: Box088
+    100012: Box089
+    100014: Box090
+    100016: Box091
+    100018: chair
+    100020: chair001
+    100022: chair002
+    100024: chair003
+    100026: chair004
+    100028: chair005
+    100030: chair006
+    100032: high bake
+    100034: high bake001
+    100036: high bake002
+    100038: Level_template_01
+    100040: //RootNode
+    100042: low_bake
+    100044: Object001
+    100046: Particle View 001
+    100048: wall_2x5
+    100050: wall_4x5
+    100052: wall_6x5
+    100054: wall_8x5
+    400000: Box079
+    400002: Box080
+    400004: Box085
+    400006: Box086
+    400008: Box087
+    400010: Box088
+    400012: Box089
+    400014: Box090
+    400016: Box091
+    400018: chair
+    400020: chair001
+    400022: chair002
+    400024: chair003
+    400026: chair004
+    400028: chair005
+    400030: chair006
+    400032: high bake
+    400034: high bake001
+    400036: high bake002
+    400038: Level_template_01
+    400040: //RootNode
+    400042: low_bake
+    400044: Object001
+    400046: Particle View 001
+    400048: wall_2x5
+    400050: wall_4x5
+    400052: wall_6x5
+    400054: wall_8x5
+    2300000: Box079
+    2300002: Box080
+    2300004: Box085
+    2300006: Box086
+    2300008: Box087
+    2300010: Box088
+    2300012: Box089
+    2300014: Box090
+    2300016: Box091
+    2300018: chair
+    2300020: chair001
+    2300022: chair002
+    2300024: chair003
+    2300026: chair004
+    2300028: chair005
+    2300030: chair006
+    2300032: high bake
+    2300034: high bake001
+    2300036: high bake002
+    2300038: Level_template_01
+    2300040: low_bake
+    2300042: Object001
+    2300044: wall_2x5
+    2300046: wall_4x5
+    2300048: wall_6x5
+    2300050: wall_8x5
+    3300000: Box079
+    3300002: Box080
+    3300004: Box085
+    3300006: Box086
+    3300008: Box087
+    3300010: Box088
+    3300012: Box089
+    3300014: Box090
+    3300016: Box091
+    3300018: chair
+    3300020: chair001
+    3300022: chair002
+    3300024: chair003
+    3300026: chair004
+    3300028: chair005
+    3300030: chair006
+    3300032: high bake
+    3300034: high bake001
+    3300036: high bake002
+    3300038: Level_template_01
+    3300040: low_bake
+    3300042: Object001
+    3300044: wall_2x5
+    3300046: wall_4x5
+    3300048: wall_6x5
+    3300050: wall_8x5
+    4300000: Level_template_01
+    4300002: high bake
+    4300004: low_bake
+    4300006: high bake001
+    4300008: high bake002
+    4300010: wall_6x5
+    4300012: wall_8x5
+    4300014: Box079
+    4300016: Box080
+    4300018: chair
+    4300020: Box085
+    4300022: Box086
+    4300024: Box087
+    4300026: Box088
+    4300028: Box089
+    4300030: Box090
+    4300032: wall_4x5
+    4300034: wall_2x5
+    4300036: Object001
+    4300038: Box091
+    4300040: chair001
+    4300042: chair002
+    4300044: chair003
+    4300046: chair004
+    4300048: chair005
+    4300050: chair006
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
