@@ -11,13 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 569b8c29b2ef0df4d8edbc38d441b7f2, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  CurrentPluginConfig: Release
+  CurrentPluginConfig: Profile
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AEAF0C71-9699-417E-B7E9-F36908105EEB}'
-    m_lastTimePsrt1: -424539504
-    m_lastTimePart2: -1999459522
+    m_lastTimePsrt1: 725525099
+    m_lastTimePart2: -1999459549
     List:
     - Name: Camera
       Path: Default Work Unit\Camera
@@ -160,8 +160,8 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3F98A906-0388-4B7D-8B29-F4B03D9552D2}'
-    m_lastTimePsrt1: -410748125
-    m_lastTimePart2: -1999459522
+    m_lastTimePsrt1: 780347502
+    m_lastTimePart2: -1999459549
     List:
     - Name: Footsteps_speed
       Path: Default Work Unit\Footsteps_speed
@@ -228,8 +228,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{83210D03-6B49-4D8B-BAB1-885C4E05A5F8}'
-    m_lastTimePsrt1: -410758126
-    m_lastTimePart2: -1999459522
+    m_lastTimePsrt1: -1595592717
+    m_lastTimePart2: -1999459536
     List:
     - Name: vjsoundbank
       Path: Default Work Unit\vjsoundbank
@@ -242,12 +242,6 @@ MonoBehaviour:
       Guid: 59d6ac0055fff94fabd3de7813fb9904
   ExpandedItems:
   - /voyeursjuveniles
-  - /voyeursjuveniles/SoundBanks
-  - /voyeursjuveniles/States
-  - /voyeursjuveniles/States/Default Work Unit
-  - /voyeursjuveniles/Switches
-  - /voyeursjuveniles/Switches/Default Work Unit
-  - /voyeursjuveniles/Switches/Default Work Unit/MusicSwitch
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

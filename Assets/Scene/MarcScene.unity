@@ -618,7 +618,6 @@ GameObject:
   - 114: {fileID: 1028509732}
   - 114: {fileID: 1028509731}
   - 114: {fileID: 1028509735}
-  - 114: {fileID: 1028509736}
   m_Layer: 0
   m_Name: Julien
   m_TagString: Player
@@ -710,21 +709,6 @@ MonoBehaviour:
   bankName: vjsoundbank
   loadAsynchronous: 0
   unloadTriggerList: 
---- !u!114 &1028509736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1028509729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8928566a9528d214596d6397ae540711, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_posOffsetData: {fileID: 0}
-  isEnvironmentAware: 1
-  listenerMask: -1
-  isStaticObject: 0
 --- !u!1 &1059505315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,6 +1098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19aa45eff9a88694393875d80ee0c3f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Timer: 10
   soundManager: {fileID: 1462392004}
 --- !u!4 &1462392003
 Transform:
