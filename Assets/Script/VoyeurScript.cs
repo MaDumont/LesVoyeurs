@@ -7,12 +7,14 @@ public class VoyeurScript : MonoBehaviour {
 	public float TurnSpeed;
 	FOV2DEyes eyes;
 	FOV2DVisionCone visionCone;
+	Animator anim;
 	bool targetAcquire = false;
 
 	private Rigidbody _rigidBody;
 
 	// Use this for initialization
 	void Start () {
+		anim = GetComponentInChildren<Animator> ();
 		_rigidBody = GetComponent<Rigidbody> ();
 		eyes = GetComponentInChildren<FOV2DEyes>();
 		visionCone = GetComponentInChildren<FOV2DVisionCone>();
@@ -25,6 +27,9 @@ public class VoyeurScript : MonoBehaviour {
 		float forwardVel = Input.GetAxis ("Horizontal");
 		float sideVel = Input.GetAxis ("Vertical");
 
+		anim.SetBool ("move", forwardVel != 0 || sideVel != 0);
+		anim.SetBool ("sneak", Input.GetKey (KeyCode.LeftShift));
+
 		float rotation = (Input.GetKey (KeyCode.Q) ? -1 : 0) + (Input.GetKey (KeyCode.E) ? 1 : 0);
 		Vector3 velocity = new Vector3 (forwardVel, 0, sideVel) * Speed;
 		velocity = transform.TransformDirection (velocity);
@@ -35,11 +40,16 @@ public class VoyeurScript : MonoBehaviour {
 
 		if (targetAcquire && Input.GetMouseButton (0)) {
 			visionCone.status = FOV2DVisionCone.Status.Suspicious;
+			anim.SetBool("camera", true);
 		} else if (targetAcquire) {
+			anim.SetBool("camera", false);
 			visionCone.status = FOV2DVisionCone.Status.Alert;
 		}else{
+			anim.SetBool("camera", false);
 			visionCone.status = FOV2DVisionCone.Status.Idle;
 		}
+
+
 	}
 
 	void CheckVision(){
