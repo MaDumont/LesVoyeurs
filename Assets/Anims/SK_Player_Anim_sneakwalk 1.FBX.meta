@@ -1,49 +1,16 @@
 fileFormatVersion: 2
-guid: 85c5f870f03c0e84e851e994776d6d1b
-timeCreated: 1440262907
+guid: aafb4a8c88f07b24594474f51b09330f
+timeCreated: 1440254530
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: Be_K_Camera_End_001
-    100002: Be_K_Head_End_001
-    100004: Be_K_L_Arm_End_001
-    100006: Be_K_L_Leg_End_001
-    100008: Be_K_R_Arm_End_001
-    100010: Be_K_R_Leg_End_001
-    100012: Be_K_ROOT_End_001
-    100014: Be_K_Torso_End_001
-    100016: BN_K_Camera_001
-    100018: BN_K_Head_001
-    100020: BN_K_L_Arm_001
-    100022: BN_K_L_Leg_001
-    100024: BN_K_R_Arm_001
-    100026: BN_K_R_Leg_001
-    100028: BN_K_ROOT_001
-    100030: BN_K_Torso_001
-    100032: SK_Kid
-    100034: //RootNode
-    400000: Be_K_Camera_End_001
-    400002: Be_K_Head_End_001
-    400004: Be_K_L_Arm_End_001
-    400006: Be_K_L_Leg_End_001
-    400008: Be_K_R_Arm_End_001
-    400010: Be_K_R_Leg_End_001
-    400012: Be_K_ROOT_End_001
-    400014: Be_K_Torso_End_001
-    400016: BN_K_Camera_001
-    400018: BN_K_Head_001
-    400020: BN_K_L_Arm_001
-    400022: BN_K_L_Leg_001
-    400024: BN_K_R_Arm_001
-    400026: BN_K_R_Leg_001
-    400028: BN_K_ROOT_001
-    400030: BN_K_Torso_001
-    400032: SK_Kid
-    400034: //RootNode
-    4300000: SK_Kid
+    100000: Circle017
+    100002: //RootNode
+    400000: Circle017
+    400002: //RootNode
+    7400000: Take 001
     9500000: //RootNode
-    13700000: SK_Kid
   materials:
     importMaterials: 1
     materialName: 0

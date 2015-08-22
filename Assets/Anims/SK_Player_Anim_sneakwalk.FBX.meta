@@ -1,0 +1,320 @@
+fileFormatVersion: 2
+guid: 92f2928bd9291d34b8ba8d131bf75570
+timeCreated: 1440254775
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Be_A_Head_End_001
+    100002: Be_A_L_Arm_End_001
+    100004: Be_A_L_Leg_End_001
+    100006: Be_A_R_Arm_End_001
+    100008: Be_A_R_Leg_End_001
+    100010: Be_A_ROOT_End_001
+    100012: Be_A_Torso_End_001
+    100014: Be_K_Camera_End_001
+    100016: Be_K_Head_End_001
+    100018: Be_K_L_Arm_End_001
+    100020: Be_K_L_Leg_End_001
+    100022: Be_K_R_Arm_End_001
+    100024: Be_K_R_Leg_End_001
+    100026: Be_K_ROOT_End_001
+    100028: Be_K_Torso_End_001
+    100030: BN_A_Head_001
+    100032: BN_A_L_Arm_001
+    100034: BN_A_L_Leg_001
+    100036: BN_A_R_Arm_001
+    100038: BN_A_R_Leg_001
+    100040: BN_A_ROOT_001
+    100042: BN_A_Torso_001
+    100044: BN_K_Camera_001
+    100046: BN_K_Head_001
+    100048: BN_K_L_Arm_001
+    100050: BN_K_L_Leg_001
+    100052: BN_K_R_Arm_001
+    100054: BN_K_R_Leg_001
+    100056: BN_K_ROOT_001
+    100058: BN_K_Torso_001
+    100060: Box001
+    100062: Circle002
+    100064: Circle003
+    100066: Circle004
+    100068: Circle005
+    100070: Circle006
+    100072: Circle007
+    100074: Circle008
+    100076: Circle009
+    100078: Circle010
+    100080: Circle011
+    100082: Circle012
+    100084: Circle013
+    100086: Circle014
+    100088: Circle015
+    100090: Circle016
+    100092: Circle017
+    100094: IK Chain001
+    100096: IK Chain002
+    100098: IK Chain003
+    100100: IK Chain004
+    100102: SK_Adult
+    100104: SK_Kid
+    100106: //RootNode
+    400000: Be_A_Head_End_001
+    400002: Be_A_L_Arm_End_001
+    400004: Be_A_L_Leg_End_001
+    400006: Be_A_R_Arm_End_001
+    400008: Be_A_R_Leg_End_001
+    400010: Be_A_ROOT_End_001
+    400012: Be_A_Torso_End_001
+    400014: Be_K_Camera_End_001
+    400016: Be_K_Head_End_001
+    400018: Be_K_L_Arm_End_001
+    400020: Be_K_L_Leg_End_001
+    400022: Be_K_R_Arm_End_001
+    400024: Be_K_R_Leg_End_001
+    400026: Be_K_ROOT_End_001
+    400028: Be_K_Torso_End_001
+    400030: BN_A_Head_001
+    400032: BN_A_L_Arm_001
+    400034: BN_A_L_Leg_001
+    400036: BN_A_R_Arm_001
+    400038: BN_A_R_Leg_001
+    400040: BN_A_ROOT_001
+    400042: BN_A_Torso_001
+    400044: BN_K_Camera_001
+    400046: BN_K_Head_001
+    400048: BN_K_L_Arm_001
+    400050: BN_K_L_Leg_001
+    400052: BN_K_R_Arm_001
+    400054: BN_K_R_Leg_001
+    400056: BN_K_ROOT_001
+    400058: BN_K_Torso_001
+    400060: Box001
+    400062: Circle002
+    400064: Circle003
+    400066: Circle004
+    400068: Circle005
+    400070: Circle006
+    400072: Circle007
+    400074: Circle008
+    400076: Circle009
+    400078: Circle010
+    400080: Circle011
+    400082: Circle012
+    400084: Circle013
+    400086: Circle014
+    400088: Circle015
+    400090: Circle016
+    400092: Circle017
+    400094: IK Chain001
+    400096: IK Chain002
+    400098: IK Chain003
+    400100: IK Chain004
+    400102: SK_Adult
+    400104: SK_Kid
+    400106: //RootNode
+    2300000: Box001
+    3300000: Box001
+    4300000: Box001
+    4300002: SK_Kid
+    4300004: SK_Adult
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: SK_Adult
+    13700002: SK_Kid
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_A_ROOT_001
+        weight: 1
+      - path: BN_A_ROOT_001/Be_A_ROOT_End_001
+        weight: 1
+      - path: BN_A_ROOT_001/BN_A_Torso_001
+        weight: 1
+      - path: BN_A_ROOT_001/BN_A_Torso_001/Be_A_Torso_End_001
+        weight: 1
+      - path: BN_A_ROOT_001/BN_A_Torso_001/BN_A_Head_001
+        weight: 1
+      - path: BN_A_ROOT_001/BN_A_Torso_001/BN_A_Head_001/Be_A_Head_End_001
+        weight: 1
+      - path: BN_A_ROOT_001/BN_A_Torso_001/BN_A_L_Arm_001
+        weight: 1
+      - path: BN_A_ROOT_001/BN_A_Torso_001/BN_A_L_Arm_001/Be_A_L_Arm_End_001
+        weight: 1
+      - path: BN_A_ROOT_001/BN_A_Torso_001/BN_A_L_Leg_001
+        weight: 1
+      - path: BN_A_ROOT_001/BN_A_Torso_001/BN_A_L_Leg_001/Be_A_L_Leg_End_001
+        weight: 1
+      - path: BN_A_ROOT_001/BN_A_Torso_001/BN_A_R_Arm_001
+        weight: 1
+      - path: BN_A_ROOT_001/BN_A_Torso_001/BN_A_R_Arm_001/Be_A_R_Arm_End_001
+        weight: 1
+      - path: BN_A_ROOT_001/BN_A_Torso_001/BN_A_R_Leg_001
+        weight: 1
+      - path: BN_A_ROOT_001/BN_A_Torso_001/BN_A_R_Leg_001/Be_A_R_Leg_End_001
+        weight: 1
+      - path: BN_K_ROOT_001
+        weight: 1
+      - path: BN_K_ROOT_001/Be_K_ROOT_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Camera_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Camera_001/Be_K_Camera_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/Be_K_Torso_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_Head_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_Head_001/Be_K_Head_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_L_Arm_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_L_Arm_001/Be_K_L_Arm_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_L_Leg_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_L_Leg_001/Be_K_L_Leg_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_R_Arm_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_R_Arm_001/Be_K_R_Arm_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_R_Leg_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_R_Leg_001/Be_K_R_Leg_End_001
+        weight: 1
+      - path: Box001
+        weight: 1
+      - path: Circle002
+        weight: 1
+      - path: Circle002/Circle004
+        weight: 1
+      - path: Circle002/Circle005
+        weight: 1
+      - path: Circle002/Circle006
+        weight: 1
+      - path: Circle002/Circle007
+        weight: 1
+      - path: Circle002/Circle008
+        weight: 1
+      - path: Circle002/Circle009
+        weight: 1
+      - path: Circle002/Circle013
+        weight: 1
+      - path: Circle003
+        weight: 1
+      - path: Circle003/Circle014
+        weight: 1
+      - path: Circle003/Circle015
+        weight: 1
+      - path: Circle003/Circle016
+        weight: 1
+      - path: Circle003/Circle016/Circle010
+        weight: 1
+      - path: Circle003/Circle016/Circle011
+        weight: 1
+      - path: Circle003/Circle016/Circle012
+        weight: 1
+      - path: Circle003/Circle017
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK Chain003
+        weight: 1
+      - path: IK Chain004
+        weight: 1
+      - path: SK_Adult
+        weight: 1
+      - path: SK_Kid
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
