@@ -4,7 +4,7 @@ using System.Collections;
 public class SoundManager: MonoBehaviour{
 
     private static SoundManager instance = null;
-    uint bankID;
+    private uint bankID;
 
     public static SoundManager getInstance()
     {

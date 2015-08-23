@@ -15,6 +15,7 @@ public class VoyeurScript : MonoBehaviour {
 	public bool TakingPicture = false;
 
 	private Rigidbody _rigidBody;
+    private SoundManager soundManager;
 
 
 	// Use this for initialization
@@ -26,6 +27,7 @@ public class VoyeurScript : MonoBehaviour {
 
 		InvokeRepeating ("CheckVision", 0, 0.3f);
 		GameManager.getInstance().setPlayerPos(this.transform.position);
+        soundManager = SoundManager.getInstance();
 	}
 	
 	// Update is called once per frame
@@ -62,6 +64,15 @@ public class VoyeurScript : MonoBehaviour {
 			visionCone.status = FOV2DVisionCone.Status.Idle;
 		}
 	}
+
+    public void LateUpdate()
+    {
+        //vitesse de marche
+        if (_rigidBody.velocity.magnitude >= 2)
+        {
+            //soundManager.StartParentScream();
+        }
+    }
 
 	void CheckVision(){
 	 	targetAcquire = false;
