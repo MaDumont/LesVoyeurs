@@ -10,11 +10,12 @@ public class GameManager : MonoBehaviour {
 	private float timeRemaining;
 	private static int winCondition;
 	private GameState gamestate;
-	private ArrayList pointsListeners;
     public SoundManager soundManager;
 	private ArrayList guardListeners;
 	private bool gameOver = false;
+	private bool win = false;
 	private Vector3 playerPos;
+	private GameObject player;
 
 	public static GameManager getInstance()
 	{
@@ -56,16 +57,36 @@ public class GameManager : MonoBehaviour {
 		guardListeners = new ArrayList ();
 	}
 
+	public void SetPlayer(GameObject go)
+	{
+		player = go;
+	}
+
 	// Use this for initialization
 	void Start () {
         		
 	}
 
-	void GameOver(){
+	public void Win()
+	{
+		timeRemaining = 0.0f;
+		win = true;
+	}
+	
+	public void GameOver(){
 		timeRemaining = 0.0f;
 		gameOver = true;
 	}
-	
+
+	public void TryToCatchPlayer(Vector3 pos)
+	{
+		float distance = Vector3.Distance (pos, player.transform.position);
+
+		if (distance < 0.5f) {
+			GameOver();
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
 		if(!gameOver)
@@ -88,7 +109,12 @@ public class GameManager : MonoBehaviour {
 		var x = Screen.width/2 - 50;
 		GUI.Box(new Rect(x,0,100,25),timeRemaining.ToString("#.00"));
 
-		if(gameOver){
+		if (win) {
+			x = Screen.width/2 - 50;
+			var y = Screen.height / 2 - 50;
+			GUI.Box (new Rect (x, y, 100, 25), "You Won!");
+		}
+		else if(gameOver){
 			x = Screen.width/2 - 50;
 			var y = Screen.height / 2 - 50;
 			GUI.Box (new Rect (x, y, 100, 25), "Game Over!");

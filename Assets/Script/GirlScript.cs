@@ -1,9 +1,8 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using AssemblyCSharp;
-
 public class GirlScript : MonoBehaviour {
-
+	
 	public Transform point;
 	private NavMeshAgent agent;
 	FOV2DEyes eyes;
@@ -14,12 +13,10 @@ public class GirlScript : MonoBehaviour {
 	
 	enum State {IDLE, WALK, ALERT};
 	State currentState;
-
-    private SoundManager soundManager;
 	
 	void Start () {
 		GameManager.getInstance ().addGuardListener (this);
-		anim = GetComponentInChildren<Animator> ();
+		anim = GetComponent<Animator> ();
 		agent = GetComponent<NavMeshAgent>();  
 		eyes = GetComponentInChildren<FOV2DEyes>();
 		visionCone = GetComponentInChildren<FOV2DVisionCone>();
@@ -31,27 +28,27 @@ public class GirlScript : MonoBehaviour {
 		agent.Stop ();
 		// Set the agent to go to the currently selected destination.
 		agent.destination = point.position;
-		anim.SetBool ("Move", true);
-
+		
 		InvokeRepeating ("CheckVision", 0, 0.3f);
-
-        soundManager = SoundManager.getInstance();
-
 	}
-	
+
 	public void gameStateChanged(GameState gameState)
 	{
-		if (gameState == GameState.Suspected)
+		if (gameState == GameState.Suspected) {
 			eyes.fovMaxDistance++;
+		}
 		else if (gameState == GameState.Detected)
 			agent.speed = 2;
 	}
 	
 	void Idle(){
-		chasePlayer = false;
 		currentState = State.IDLE;
+		chasePlayer = false;
 		anim.SetBool ("Move", false);
+		anim.SetBool ("Detection", false);
 		agent.Stop();
+		if (agent.destination != point.position)
+			GotoNextPoint ();
 	}
 	
 	void Alert(){
@@ -63,12 +60,11 @@ public class GirlScript : MonoBehaviour {
 			anim.SetBool ("Move", true);
 			anim.SetBool ("Detection", true);
 			agent.Stop ();
-			
+				
 			GameManager.getInstance().stepUpGameState();
-			GameManager.getInstance().setPlayerPos(this.transform.position);
-
-            soundManager.StartGirlScream();
 		}
+		Walk ();
+		GameManager.getInstance ().setPlayerPos (lastSeen);
 	}
 	
 	void NoAlert(){
@@ -76,8 +72,13 @@ public class GirlScript : MonoBehaviour {
 		
 		if (currentState == State.ALERT) {
 			Debug.Log ("NoAlert");
-			anim.SetBool("Detection", false);
+			currentState = State.IDLE;
+			anim.SetBool("", false);
 			Walk ();
+		}
+
+		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Walk")) {
+			chasePlayer = false;
 		}
 	}
 	
@@ -90,7 +91,9 @@ public class GirlScript : MonoBehaviour {
 
 	void PointingDone()
 	{
-		anim.SetBool ("Move", true);
+		anim.SetBool ("Detection", false);
+		chasePlayer = true;
+		agent.speed = Mathf.Max(1, agent.speed);
 		Walk ();
 	}
 
@@ -98,7 +101,6 @@ public class GirlScript : MonoBehaviour {
 	{
 		lastSeen = noisePos;
 		chasePlayer = true;
-		anim.SetBool ("Detection", false);
 		Walk ();
 	}
 	
@@ -121,6 +123,8 @@ public class GirlScript : MonoBehaviour {
 	void Update () {
 		// Choose the next destination point when the agent gets
 		// close to the current one.
+		if (chasePlayer)
+			GameManager.getInstance().TryToCatchPlayer(this.transform.position);
 		if (currentState == State.WALK && agent.remainingDistance < 0.5f) {
 			Idle ();
 		}
@@ -137,9 +141,10 @@ public class GirlScript : MonoBehaviour {
 		
 		if (alert) {
 			Alert ();
+			chasePlayer = true;
+		} else {
+			NoAlert ();
 		}
-		else
-			NoAlert();
-		chasePlayer = alert;
+
 	}
 }

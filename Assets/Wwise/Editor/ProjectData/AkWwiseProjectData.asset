@@ -244,6 +244,11 @@ MonoBehaviour:
   - /voyeursjuveniles
   - /voyeursjuveniles/Events
   - /voyeursjuveniles/Events/Default Work Unit
+  - /voyeursjuveniles/States
+  - /voyeursjuveniles/States/Default Work Unit
+  - /voyeursjuveniles/Switches
+  - /voyeursjuveniles/Switches/Default Work Unit
+  - /voyeursjuveniles/Switches/Default Work Unit/MusicSwitch
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

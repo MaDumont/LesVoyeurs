@@ -8,6 +8,8 @@ TagManager:
   - Guard
   - Door
   - Window
+  - Menu
+  - Levels
   layers:
   - Default
   - TransparentFX
