@@ -3,10 +3,31 @@ using System.Collections;
 
 public class SoundManager: MonoBehaviour{
 
+    private static SoundManager instance = null;
     uint bankID;
+
+    public static SoundManager getInstance()
+    {
+        return instance;
+    }
 
     public void Awake()
     {
+        //Check if instance already exists
+        if (instance == null)
+
+            //if not, set instance to this
+            instance = this;
+
+        //If instance already exists and it's not this:
+        else if (instance != this)
+
+            //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
+            Destroy(gameObject);
+
+        //Sets this to not be destroyed when reloading scene
+        DontDestroyOnLoad(gameObject);
+
         AkSoundEngine.LoadBank("vjsoundbank", AkSoundEngine.AK_DEFAULT_POOL_ID, out bankID);
     }
 
@@ -92,6 +113,10 @@ public class SoundManager: MonoBehaviour{
     }
     public void StartCloseDoorSound()
     {
-        PlayEvent("Porte_Fermer");
+        PlayEvent("Porte_Ferme");
+    }
+    public void StartFloorCrackSound()
+    {
+        PlayEvent("Planche_craque");
     }
 }

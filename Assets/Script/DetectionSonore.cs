@@ -21,6 +21,7 @@ public class DetectionSonore : MonoBehaviour {
     private Rigidbody _rigidBody; 
     private float distanceEntendu;
     private float totalNoiseHear;
+    private SoundManager soundManager;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +29,7 @@ public class DetectionSonore : MonoBehaviour {
         distanceEntendu = MAX_SLIDER_VALUE;
         sliderSound.maxValue = SOUND_BROADCASTING_RUN; 
         totalNoiseHear = 0;
+        soundManager = SoundManager.getInstance();
 	}
 	
 	// Update is called once per frame
@@ -35,18 +37,22 @@ public class DetectionSonore : MonoBehaviour {
         if (_rigidBody.velocity.magnitude <= 0.1)
         {
             distanceEntendu = SOUND_BROADCASTING_STILL;
+            soundManager.StopWalkSound();
         }
         else if ( _rigidBody.velocity.magnitude <= 3)
         {
             distanceEntendu = SOUND_BROADCASTING_CROUNCH;
+            soundManager.StartWalkSound();
         }
         else if (_rigidBody.velocity.magnitude < 6.5)
         {
             distanceEntendu = SOUND_BROADCASTING_WALK;
+            soundManager.StartWalkSound();
         }
         else if (_rigidBody.velocity.magnitude >= 6.5)
         {
             distanceEntendu = SOUND_BROADCASTING_RUN;
+            soundManager.StartWalkSound();
         }
 
         sliderSound.value = distanceEntendu;	

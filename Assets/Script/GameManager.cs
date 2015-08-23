@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour {
 	private static int winCondition;
 	private GameState gamestate;
 	private ArrayList pointsListeners;
-    public SoundManager soundManager;
+    public SoundManager soundManager = SoundManager.getInstance();
 	private bool gameOver = false;
 
 	public static GameManager getInstance()
