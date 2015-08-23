@@ -22,7 +22,6 @@ public class SoundManager: MonoBehaviour{
     }
 
 
-    //Il faut changer le nom des events !!!!!!!
     public void StartGirlScream()
     {
         PlayEvent("Enfants_Surpris");
@@ -86,5 +85,13 @@ public class SoundManager: MonoBehaviour{
     public void StopWinLevelSound()
     {
         StopEvent("LevelComplete");
+    }
+    public void StartOpenDoorSound()
+    {
+        PlayEvent("Porte_Ouvre");
+    }
+    public void StartCloseDoorSound()
+    {
+        PlayEvent("Porte_Fermer");
     }
 }
