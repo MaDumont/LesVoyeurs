@@ -112,4 +112,9 @@ public class VoyeurScript : MonoBehaviour {
 			}
 		}
 	}
+    void OnTriggerEnter(Collider other)
+    {
+        anim.SetBool("jump", other.tag == "Window");        
+    }
+
 }
