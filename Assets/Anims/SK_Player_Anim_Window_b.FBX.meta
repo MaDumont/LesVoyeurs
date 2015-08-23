@@ -64,7 +64,78 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 300
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .23152709
+        functionName: endGame
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_K_ROOT_001
+        weight: 1
+      - path: BN_K_ROOT_001/Be_K_ROOT_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Camera_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Camera_001/Be_K_Camera_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/Be_K_L_Arm_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/Be_K_R_Arm_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/Be_K_Torso_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_Head_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_Head_001/Be_K_Head_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_L_Arm_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_L_Leg_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_L_Leg_001/Be_K_L_Leg_End_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_R_Arm_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_R_Leg_001
+        weight: 1
+      - path: BN_K_ROOT_001/BN_K_Torso_001/BN_K_R_Leg_001/Be_K_R_Leg_End_001
+        weight: 1
+      - path: IK Chain003
+        weight: 1
+      - path: IK Chain004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

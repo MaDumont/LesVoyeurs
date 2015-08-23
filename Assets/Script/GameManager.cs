@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
 	private int stealthBonus = 0;
 	private int highestSinglePoints = 0;
 	private int detections = 0;
+	private int nbPhotos = 0;
 
 	private float timeRemaining;
 	private static int winCondition;
@@ -75,7 +76,7 @@ public class GameManager : MonoBehaviour {
 	public void Win()
 	{
 		timeRemaining = 0.0f;
-		endOfGameString = "Congratulations!";
+		endOfGameString = "Congratulations!\nYou escaped with " + nbPhotos + " pictures!";
 		win = true;
 		Time.timeScale = 0;
 	}
@@ -117,6 +118,10 @@ public class GameManager : MonoBehaviour {
 	public void updatePoints(int delta)
 	{
 		points += delta;
+
+		if (delta > 100)
+			nbPhotos++;
+
 		if (delta > 100 && delta > highestSinglePoints)
 			highestSinglePoints = delta;
 		if (gamestate == GameState.Stealth)
@@ -129,18 +134,17 @@ public class GameManager : MonoBehaviour {
 			+ "\nBest Photo : " + highestSinglePoints + "\nStealth Bonus : " + stealthBonus + "\nTimes Seen : " + detections;
 		GUI.Box(new Rect(0,0,125,80),sidePanelString);
 
-		var x = Screen.width/2 - 50;
-		GUI.Box(new Rect(x,0,100,25),timeRemaining.ToString("#.00"));
-
 		if (win) {
-			x = Screen.width/2 - 75;
+			var x = Screen.width / 2 - 75;
 			var y = Screen.height / 2 - 50;
-			GUI.Box (new Rect (x, y, 150, 40), "You Won!\n" + endOfGameString);
-		}
-		else if(gameOver){
-			x = Screen.width/2 - 75;
+			GUI.Box (new Rect (x, y, 200, 55), "You Won!\n" + endOfGameString);
+		} else if (gameOver) {
+			var x = Screen.width / 2 - 75;
 			var y = Screen.height / 2 - 50;
 			GUI.Box (new Rect (x, y, 150, 40), "Game Over!\n" + endOfGameString);
+		} else {
+			var x = Screen.width/2 - 50;
+			GUI.Box(new Rect(x,0,100,25),timeRemaining.ToString("#.00"));
 		}
 	}
 

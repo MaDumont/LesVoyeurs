@@ -116,5 +116,8 @@ public class VoyeurScript : MonoBehaviour {
     {
         anim.SetBool("jump", other.tag == "Window");        
     }
-
+	void endGame()
+	{
+		GameManager.getInstance ().Win ();
+	}
 }
