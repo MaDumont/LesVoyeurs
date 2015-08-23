@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class SoundGaugeManager : MonoBehaviour {
+public class SoundGaugeManager: MonoBehaviour{
 
 
     private readonly float SOUND_BROADCASTING_RUN = 10;
@@ -10,46 +10,41 @@ public class SoundGaugeManager : MonoBehaviour {
     private readonly float SOUND_BROADCASTING_CROUNCH = 2;
     private readonly float SOUND_BROADCASTING_STILL = 0;
 
-    private readonly float QUANTITY_GIRL_HEAR_SOUND = 0.01f;
-    private readonly float QUANTITY_PARENT_HEAR_SOUND = 0.1f;
+    private readonly float QUANTITY_GIRL_HEAR_SOUND = 0.05f;
+    private readonly float QUANTITY_PARENT_HEAR_SOUND = 0.5f;
 
     private readonly int MAX_SLIDER_VALUE = 100;
-
-    public Slider sliderSound;
     
-
-    private Rigidbody _rigidBody; 
+    private Rigidbody playerRigidBody; 
     private float distanceEntendu;
     private float totalNoiseHear;
 
 	// Use this for initialization
-	void Start () {
-        _rigidBody = GetComponent<Rigidbody>();
-        distanceEntendu = MAX_SLIDER_VALUE;
-        sliderSound.maxValue = SOUND_BROADCASTING_RUN; 
+    void Awake()
+    {
+        distanceEntendu =SOUND_BROADCASTING_RUN ;
         totalNoiseHear = 0;
+        playerRigidBody = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        if (_rigidBody.velocity.magnitude <= 0.1)
+	public void Update () {
+        if (playerRigidBody.velocity.magnitude <= 0.1)
         {
             distanceEntendu = SOUND_BROADCASTING_STILL;
         }
-        else if ( _rigidBody.velocity.magnitude <= 3)
+        else if ( playerRigidBody.velocity.magnitude <= 3)
         {
             distanceEntendu = SOUND_BROADCASTING_CROUNCH;
         }
-        else if (_rigidBody.velocity.magnitude < 6.5)
+        else if (playerRigidBody.velocity.magnitude < 6.5)
         {
             distanceEntendu = SOUND_BROADCASTING_WALK;
         }
-        else if (_rigidBody.velocity.magnitude >= 6.5)
+        else if (playerRigidBody.velocity.magnitude >= 6.5)
         {
             distanceEntendu = SOUND_BROADCASTING_RUN;
         }
-
-        sliderSound.value = distanceEntendu;	
 	}
 
     void LateUpdate() {
@@ -59,25 +54,29 @@ public class SoundGaugeManager : MonoBehaviour {
             totalNoiseHear -= totalNoiseHear / MAX_SLIDER_VALUE;
         }
 
-        Collider[] hitColliders = Physics.OverlapSphere(_rigidBody.transform.position, distanceEntendu);
+        Collider[] hitColliders = Physics.OverlapSphere(playerRigidBody.transform.position, distanceEntendu);
 
         for (int i = 0; i < hitColliders.Length; i++)
         {
             if (hitColliders[i].tag == "Girl"){
-                totalNoiseHear += _rigidBody.velocity.magnitude *QUANTITY_GIRL_HEAR_SOUND / distanceBetweenPlayerAndObject(hitColliders[i]) ;
+                totalNoiseHear += playerRigidBody.velocity.magnitude *QUANTITY_GIRL_HEAR_SOUND / distanceBetweenPlayerAndObject(hitColliders[i]) ;
             }
             if (hitColliders[i].tag == "Guard")
             {
-                totalNoiseHear += _rigidBody.velocity.magnitude * QUANTITY_PARENT_HEAR_SOUND / distanceBetweenPlayerAndObject(hitColliders[i]) ;
+                totalNoiseHear += playerRigidBody.velocity.magnitude * QUANTITY_PARENT_HEAR_SOUND / distanceBetweenPlayerAndObject(hitColliders[i]) ;
             }
         }
+    }
 
-        sliderSound.value = totalNoiseHear;
+    void OnGUI()
+    {
+        var x = Screen.width - 100;
+        GUI.HorizontalSlider(new Rect(x, 0, 100, 100), totalNoiseHear, 0, MAX_SLIDER_VALUE);
     }
 
     private float distanceBetweenPlayerAndObject(Collider obj)
     {
-        return Mathf.Abs(obj.transform.position.magnitude - _rigidBody.transform.position.magnitude);
+        return Mathf.Abs(obj.transform.position.magnitude - playerRigidBody.transform.position.magnitude);
     }
 
 }
