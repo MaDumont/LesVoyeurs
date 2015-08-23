@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using AssemblyCSharp;
 
 public class VoyeurScript : MonoBehaviour {
 
@@ -24,7 +25,7 @@ public class VoyeurScript : MonoBehaviour {
 		visionCone = GetComponentInChildren<FOV2DVisionCone>();
 
 		InvokeRepeating ("CheckVision", 0, 0.3f);
-        
+		GameManager.getInstance().setPlayerPos(this.transform.position);
 	}
 	
 	// Update is called once per frame
@@ -60,13 +61,9 @@ public class VoyeurScript : MonoBehaviour {
 			TakingPicture = false;
 			visionCone.status = FOV2DVisionCone.Status.Idle;
 		}
-
-
 	}
 
 	void CheckVision(){
-		System.Collections.Generic.HashSet<string> targets = new HashSet<string> ();
-
 	 	targetAcquire = false;
 		CalculatePoints (false);
 	}
@@ -74,6 +71,7 @@ public class VoyeurScript : MonoBehaviour {
 	void TakePicture()
 	{
 		CalculatePoints (true);
+		GameManager.getInstance ().setPlayerPos (this.transform.position);
 	}
 
 	void CalculatePoints(bool isPhoto)
