@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class SoundGaugeManager: MonoBehaviour{
 
+    private static SoundGaugeManager instance = null;
 
     private readonly float SOUND_BROADCASTING_RUN = 10;
     private readonly float SOUND_BROADCASTING_WALK = 5;
@@ -22,13 +23,25 @@ public class SoundGaugeManager: MonoBehaviour{
 	// Use this for initialization
     void Awake()
     {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
+
         distanceEntendu =SOUND_BROADCASTING_RUN ;
         totalNoiseHear = 0;
         playerRigidBody = GetComponent<Rigidbody>();
 	}
+
+    public static SoundGaugeManager getInstance()
+    {
+        return instance;
+    }
 	
 	// Update is called once per frame
-	public void Update () {
+	private void Update () {
         if (playerRigidBody.velocity.magnitude <= 0.1)
         {
             distanceEntendu = SOUND_BROADCASTING_STILL;
@@ -59,11 +72,11 @@ public class SoundGaugeManager: MonoBehaviour{
         for (int i = 0; i < hitColliders.Length; i++)
         {
             if (hitColliders[i].tag == "Girl"){
-                totalNoiseHear += playerRigidBody.velocity.magnitude *QUANTITY_GIRL_HEAR_SOUND / distanceBetweenPlayerAndObject(hitColliders[i]) ;
+                totalNoiseHear += playerRigidBody.velocity.magnitude *QUANTITY_GIRL_HEAR_SOUND / DistanceBetweenPlayerAndObject(hitColliders[i]) ;
             }
             if (hitColliders[i].tag == "Guard")
             {
-                totalNoiseHear += playerRigidBody.velocity.magnitude * QUANTITY_PARENT_HEAR_SOUND / distanceBetweenPlayerAndObject(hitColliders[i]) ;
+                totalNoiseHear += playerRigidBody.velocity.magnitude * QUANTITY_PARENT_HEAR_SOUND / DistanceBetweenPlayerAndObject(hitColliders[i]) ;
             }
         }
     }
@@ -74,9 +87,15 @@ public class SoundGaugeManager: MonoBehaviour{
         GUI.HorizontalSlider(new Rect(x, 0, 100, 100), totalNoiseHear, 0, MAX_SLIDER_VALUE);
     }
 
-    private float distanceBetweenPlayerAndObject(Collider obj)
+    private float DistanceBetweenPlayerAndObject(Collider obj)
     {
         return Mathf.Abs(obj.transform.position.magnitude - playerRigidBody.transform.position.magnitude);
     }
+
+    public void AddNoise(int quantityNoise)
+    {
+        totalNoiseHear += quantityNoise;
+    }
+
 
 }

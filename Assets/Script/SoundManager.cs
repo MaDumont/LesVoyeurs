@@ -5,6 +5,7 @@ public class SoundManager: MonoBehaviour{
 
     private static SoundManager instance = null;
     private uint bankID;
+    private SoundGaugeManager soundGaugeManager;
 
     public static SoundManager getInstance()
     {
@@ -29,6 +30,7 @@ public class SoundManager: MonoBehaviour{
         DontDestroyOnLoad(gameObject);
 
         AkSoundEngine.LoadBank("vjsoundbank", AkSoundEngine.AK_DEFAULT_POOL_ID, out bankID);
+        soundGaugeManager = SoundGaugeManager.getInstance();
     }
 
     private void PlayEvent(string eventName)
@@ -46,6 +48,7 @@ public class SoundManager: MonoBehaviour{
     public void StartGirlScream()
     {
         PlayEvent("Enfants_Surpris");
+        soundGaugeManager.AddNoise(25);
     }
     public void StopGirlScream()
     {
@@ -54,6 +57,7 @@ public class SoundManager: MonoBehaviour{
     public void StartParentScream()
     {
         PlayEvent("Homme_Hey");
+        soundGaugeManager.AddNoise(50);
     }
     public void StopParentScream()
     {
@@ -81,7 +85,7 @@ public class SoundManager: MonoBehaviour{
     }
     public void StopIntroMusic()
     {
-        StopEvent("PLayMusic");
+        StopEvent("PlayMusic");
     }
     public void StartWalkSound()
     {
@@ -110,6 +114,7 @@ public class SoundManager: MonoBehaviour{
     public void StartOpenDoorSound()
     {
         PlayEvent("Porte_Ouvre");
+        soundGaugeManager.AddNoise(10);
     }
     public void StartCloseDoorSound()
     {
@@ -118,5 +123,20 @@ public class SoundManager: MonoBehaviour{
     public void StartFloorCrackSound()
     {
         PlayEvent("Planche_craque");
+        soundGaugeManager.AddNoise(20);
+    }
+    public void StartCameraSound()
+    {
+        PlayEvent("Camera");
+        soundGaugeManager.AddNoise(50);
+    }
+    public void StartRespirationProfonde()
+    {
+        PlayEvent("Respiration_Profonde");
+    }
+    public void StartTelevisionSound()
+    {
+        PlayEvent("Television_Noise");
+        soundGaugeManager.AddNoise(25);
     }
 }
