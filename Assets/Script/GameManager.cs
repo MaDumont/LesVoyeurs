@@ -8,9 +8,9 @@ public class GameManager : MonoBehaviour {
 	private int points;
 	public float Timer = 10f;
 
-	private int sneakBonusPoints;
-	private int highestSinglePoints;
-	private int DetectionPenalties;
+	private int stealthBonus = 0;
+	private int highestSinglePoints = 0;
+	private int detections = 0;
 
 	private float timeRemaining;
 	private static int winCondition;
@@ -110,12 +110,17 @@ public class GameManager : MonoBehaviour {
 	public void updatePoints(int delta)
 	{
 		points += delta;
+		if (delta > 100 && delta > highestSinglePoints)
+			highestSinglePoints = delta;
+		if (gamestate == GameState.Stealth)
+			stealthBonus += delta / 2;
 	}
 
 	void OnGUI()
 	{
-		string sidePanelString = "points : " + points + "\nstate : " + GameManager.getInstance().getGameState();
-		GUI.Box(new Rect(0,0,125,50),sidePanelString);
+		string sidePanelString = "State : " + GameManager.getInstance().getGameState() + "\nPoints : " + points
+			+ "\nBest Photo : " + highestSinglePoints + "\nStealth Bonus : " + stealthBonus + "\nTimes Seen : " + detections;
+		GUI.Box(new Rect(0,0,125,80),sidePanelString);
 
 		var x = Screen.width/2 - 50;
 		GUI.Box(new Rect(x,0,100,25),timeRemaining.ToString("#.00"));
@@ -173,6 +178,7 @@ public class GameManager : MonoBehaviour {
 
 	public void stepUpGameState()
 	{
+		detections++;
 		if (gamestate != GameState.Detected) {
 			gamestate++;
 			foreach (MonoBehaviour listener in guardListeners) 
