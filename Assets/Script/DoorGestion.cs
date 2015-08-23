@@ -7,8 +7,6 @@ public class DoorGestion : MonoBehaviour {
     private bool doorIsOpen;
     private SoundManager soundManager;
 
-    //public Transform penture;
-
 	// Use this for initialization
 	void Start () {
         _rigidbody = GetComponent<Rigidbody>();

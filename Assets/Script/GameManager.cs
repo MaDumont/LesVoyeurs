@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour {
 	private float timeRemaining;
 	private static int winCondition;
 	private GameState gamestate;
-	private ArrayList pointsListeners;
     public SoundManager soundManager;
 	private ArrayList guardListeners;
 	private bool gameOver = false;
