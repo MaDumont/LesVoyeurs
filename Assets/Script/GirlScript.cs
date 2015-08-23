@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using AssemblyCSharp;
 
@@ -29,7 +29,8 @@ public class GirlScript : MonoBehaviour {
 		agent.Stop ();
 		// Set the agent to go to the currently selected destination.
 		agent.destination = point.position;
-		
+		anim.SetBool ("Move", true);
+
 		InvokeRepeating ("CheckVision", 0, 0.3f);
 	}
 	
@@ -55,10 +56,11 @@ public class GirlScript : MonoBehaviour {
 			Debug.Log ("Alert!");
 			currentState = State.ALERT;
 			anim.SetBool ("Move", true);
-			anim.SetBool ("Detect", true);
+			anim.SetBool ("Detection", true);
 			agent.Stop ();
 			
 			GameManager.getInstance().stepUpGameState();
+			GameManager.getInstance().setPlayerPos(this.transform.position);
 		}
 	}
 	
@@ -67,8 +69,7 @@ public class GirlScript : MonoBehaviour {
 		
 		if (currentState == State.ALERT) {
 			Debug.Log ("NoAlert");
-			currentState = State.IDLE;
-			anim.SetBool("Detect", false);
+			anim.SetBool("Detection", false);
 			Walk ();
 		}
 	}
@@ -82,7 +83,7 @@ public class GirlScript : MonoBehaviour {
 
 	void PointingDone()
 	{
-		anim.SetBool ("Detect", false);
+		anim.SetBool ("Move", true);
 		Walk ();
 	}
 
@@ -90,7 +91,7 @@ public class GirlScript : MonoBehaviour {
 	{
 		lastSeen = noisePos;
 		chasePlayer = true;
-		anim.SetBool ("Detect", false);
+		anim.SetBool ("Detection", false);
 		Walk ();
 	}
 	
