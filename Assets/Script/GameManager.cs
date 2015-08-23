@@ -7,6 +7,11 @@ public class GameManager : MonoBehaviour {
 	private static GameManager instance = null;
 	private int points;
 	public float Timer = 10f;
+
+	private int stealthBonus = 0;
+	private int highestSinglePoints = 0;
+	private int detections = 0;
+
 	private float timeRemaining;
 	private static int winCondition;
 	private GameState gamestate;
@@ -16,7 +21,7 @@ public class GameManager : MonoBehaviour {
 	private bool win = false;
 	private Vector3 playerPos;
 	private GameObject player;
-
+	private string endOfGameString;
 	public static GameManager getInstance()
 	{
 		return instance;
@@ -70,12 +75,15 @@ public class GameManager : MonoBehaviour {
 	public void Win()
 	{
 		timeRemaining = 0.0f;
+		endOfGameString = "Congratulations!";
 		win = true;
+		Time.timeScale = 0;
 	}
 	
 	public void GameOver(){
 		timeRemaining = 0.0f;
 		gameOver = true;
+		Time.timeScale = 0;
 	}
 
 	public void TryToCatchPlayer(Vector3 pos)
@@ -83,6 +91,7 @@ public class GameManager : MonoBehaviour {
 		float distance = Vector3.Distance (pos, player.transform.position);
 
 		if (distance < 0.5f) {
+			endOfGameString = "You have been caught!!";
 			GameOver();
 		}
 	}
@@ -92,32 +101,39 @@ public class GameManager : MonoBehaviour {
 		if(!gameOver)
 			timeRemaining -= Time.deltaTime;
 
-		if (timeRemaining <= 0)
+		if (!gameOver && !win && timeRemaining <= 0) {
+			endOfGameString = "You ran out of time!!";
 			GameOver ();
+		}
 	}
 
 	public void updatePoints(int delta)
 	{
 		points += delta;
+		if (delta > 100 && delta > highestSinglePoints)
+			highestSinglePoints = delta;
+		if (gamestate == GameState.Stealth)
+			stealthBonus += delta / 2;
 	}
 
 	void OnGUI()
 	{
-		string sidePanelString = "points : " + points + "\nstate : " + GameManager.getInstance().getGameState();
-		GUI.Box(new Rect(0,0,100,100),sidePanelString);
+		string sidePanelString = "State : " + GameManager.getInstance().getGameState() + "\nPoints : " + points
+			+ "\nBest Photo : " + highestSinglePoints + "\nStealth Bonus : " + stealthBonus + "\nTimes Seen : " + detections;
+		GUI.Box(new Rect(0,0,125,80),sidePanelString);
 
 		var x = Screen.width/2 - 50;
 		GUI.Box(new Rect(x,0,100,25),timeRemaining.ToString("#.00"));
 
 		if (win) {
-			x = Screen.width/2 - 50;
+			x = Screen.width/2 - 75;
 			var y = Screen.height / 2 - 50;
-			GUI.Box (new Rect (x, y, 100, 25), "You Won!");
+			GUI.Box (new Rect (x, y, 150, 40), "You Won!\n" + endOfGameString);
 		}
 		else if(gameOver){
-			x = Screen.width/2 - 50;
+			x = Screen.width/2 - 75;
 			var y = Screen.height / 2 - 50;
-			GUI.Box (new Rect (x, y, 100, 25), "Game Over!");
+			GUI.Box (new Rect (x, y, 150, 40), "Game Over!\n" + endOfGameString);
 		}
 	}
 
@@ -162,6 +178,7 @@ public class GameManager : MonoBehaviour {
 
 	public void stepUpGameState()
 	{
+		detections++;
 		if (gamestate != GameState.Detected) {
 			gamestate++;
 			foreach (MonoBehaviour listener in guardListeners) 
