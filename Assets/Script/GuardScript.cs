@@ -14,6 +14,8 @@ public class GuardScript : MonoBehaviour {
 
 	enum State {IDLE, WALK, ALERT};
 	State currentState;
+
+    private SoundManager soundManager;
 	
 	void Start () {
 		GameManager.getInstance ().addGuardListener (this);
@@ -31,6 +33,8 @@ public class GuardScript : MonoBehaviour {
 		agent.destination = points[destPoint].position;
 
 		InvokeRepeating ("CheckVision", 0, 0.3f);
+
+        soundManager = SoundManager.getInstance();
 	}
 
 	public void gameStateChanged(GameState gameState)
@@ -58,6 +62,9 @@ public class GuardScript : MonoBehaviour {
 			agent.Stop ();
 
 			GameManager.getInstance().stepUpGameState();
+
+            soundManager.StartParentScream();
+            soundManager.StartChienJappe();
 		}
 	}
 			

@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour {
 	private static int winCondition;
 	private GameState gamestate;
 	private ArrayList pointsListeners;
-    public SoundManager soundManager = SoundManager.getInstance();
+    public SoundManager soundManager;
 	private ArrayList guardListeners;
 	private bool gameOver = false;
 	private Vector3 playerPos;
@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour {
 
 		//Call the InitGame function to initialize the first level 
 		InitGame();
+        soundManager = SoundManager.getInstance();
 	}
 	
 	//Initializes the game for each level.
