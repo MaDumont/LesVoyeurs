@@ -46,10 +46,11 @@ public class VoyeurScript : MonoBehaviour {
 		//_rigidBody.transform.Translate(velocity * Speed * Time.deltaTime);
 		_rigidBody.transform.Rotate (new Vector3(0, rotation,0), TurnSpeed * Time.deltaTime);
 
-		if (targetAcquire && Input.GetMouseButton (0)) {
+		if (targetAcquire && Input.GetMouseButtonDown (0)) {
 			visionCone.status = FOV2DVisionCone.Status.Suspicious;
 			anim.SetBool("camera", true);
 			TakingPicture = true;
+            soundManager.StartCameraSound();
 		} else if (targetAcquire) {
 			if(visionCone.status == FOV2DVisionCone.Status.Suspicious)
 			{
@@ -67,8 +68,7 @@ public class VoyeurScript : MonoBehaviour {
 
     public void LateUpdate()
     {
-        //vitesse de marche
-        if (_rigidBody.velocity.magnitude >= 2)
+        if (anim.GetNextAnimatorStateInfo(0).IsName("Walk"))
         {
             //soundManager.StartParentScream();
         }
