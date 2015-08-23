@@ -64,6 +64,7 @@ public class GirlScript : MonoBehaviour {
 			GameManager.getInstance().stepUpGameState();
 		}
 		Walk ();
+		GameManager.getInstance ().setPlayerPos (lastSeen);
 	}
 	
 	void NoAlert(){
