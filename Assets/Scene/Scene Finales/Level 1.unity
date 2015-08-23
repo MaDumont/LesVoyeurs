@@ -4728,6 +4728,42 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300006, guid: 3b33b401f4c283b46a4fa18ae0fd54e6, type: 3}
+--- !u!1 &601029973 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 124658, guid: 1aa04f06d5c401e4d9e5defb9d9f8b2f, type: 2}
+  m_PrefabInternal: {fileID: 965378420}
+--- !u!114 &601029975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601029973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3953c403da05c5b46beb7de1dc98b1fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: {fileID: 0}
+--- !u!195 &601029977
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601029973}
+  m_Enabled: 1
+  m_Radius: .180000007
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &604281588 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8e65e52676fa28c4abf18e27f64ad962, type: 3}
@@ -6988,6 +7024,42 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300004, guid: 3b33b401f4c283b46a4fa18ae0fd54e6, type: 3}
+--- !u!1 &865915776 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100028, guid: 987913f47e7209c4fa27b17a15455ace, type: 3}
+  m_PrefabInternal: {fileID: 1070156012}
+--- !u!114 &865915777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 865915776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3953c403da05c5b46beb7de1dc98b1fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: {fileID: 1404522233}
+--- !u!195 &865915779
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 865915776}
+  m_Enabled: 1
+  m_Radius: .180000007
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &868535214 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8e65e52676fa28c4abf18e27f64ad962, type: 3}
@@ -8812,7 +8884,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 987913f47e7209c4fa27b17a15455ace, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -.730000019
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 987913f47e7209c4fa27b17a15455ace, type: 3}
       propertyPath: m_LocalRotation.x
@@ -11432,6 +11504,10 @@ MeshFilter:
 --- !u!1 &1404522232 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8e65e52676fa28c4abf18e27f64ad962, type: 3}
+  m_PrefabInternal: {fileID: 781566071}
+--- !u!4 &1404522233 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 8e65e52676fa28c4abf18e27f64ad962, type: 3}
   m_PrefabInternal: {fileID: 781566071}
 --- !u!64 &1404522237
 MeshCollider:
@@ -17040,6 +17116,42 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3177b56a40618d142a6badefbdb4eb28, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &2103866266 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100028, guid: 987913f47e7209c4fa27b17a15455ace, type: 3}
+  m_PrefabInternal: {fileID: 476714890}
+--- !u!114 &2103866267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103866266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3953c403da05c5b46beb7de1dc98b1fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: {fileID: 0}
+--- !u!195 &2103866269
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103866266}
+  m_Enabled: 1
+  m_Radius: .180000007
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &2104810601
 GameObject:
   m_ObjectHideFlags: 0
