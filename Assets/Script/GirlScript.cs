@@ -123,6 +123,8 @@ public class GirlScript : MonoBehaviour {
 	void Update () {
 		// Choose the next destination point when the agent gets
 		// close to the current one.
+		if (chasePlayer)
+			GameManager.getInstance().TryToCatchPlayer(this.transform.position);
 		if (currentState == State.WALK && agent.remainingDistance < 0.5f) {
 			Idle ();
 		}
