@@ -83,14 +83,21 @@ public class GameManager : MonoBehaviour {
 	public void GameOver(){
 		timeRemaining = 0.0f;
 		gameOver = true;
+		Debug.Log ("GameOver");
+		Invoke ("ExitToMenu", 3);
 		Time.timeScale = 0;
+	}
+
+	void ExitToMenu(){
+		Debug.Log ("What");
+		Application.LoadLevel (1);
 	}
 
 	public void TryToCatchPlayer(Vector3 pos)
 	{
 		float distance = Vector3.Distance (pos, player.transform.position);
 
-		if (distance < 0.5f) {
+		if (distance < 0.5f && !gameOver && !win) {
 			endOfGameString = "You have been caught!!";
 			GameOver();
 		}
