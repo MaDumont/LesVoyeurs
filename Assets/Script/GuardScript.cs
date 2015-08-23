@@ -19,7 +19,7 @@ public class GuardScript : MonoBehaviour {
 	
 	void Start () {
 		GameManager.getInstance ().addGuardListener (this);
-		anim = GetComponentInChildren<Animator> ();
+		anim = GetComponent<Animator> ();
 		agent = GetComponent<NavMeshAgent>();  
 		eyes = GetComponentInChildren<FOV2DEyes>();
 		visionCone = GetComponentInChildren<FOV2DVisionCone>();

@@ -79,7 +79,7 @@ public class GirlScript : MonoBehaviour {
 		GotoNextPoint ();
 	}
 
-	void AlertAnimationDone()
+	void PointingDone()
 	{
 		anim.SetBool ("Detect", false);
 		Walk ();

@@ -26,7 +26,7 @@ public class VoyeurScript : MonoBehaviour {
 		visionCone = GetComponentInChildren<FOV2DVisionCone>();
 
 		InvokeRepeating ("CheckVision", 0, 0.3f);
-		GameManager.getInstance().setPlayerPos(this.transform.position);
+		//GameManager.getInstance().setPlayerPos(this.transform.position);
         soundManager = SoundManager.getInstance();
 	}
 	
