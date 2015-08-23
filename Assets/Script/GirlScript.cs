@@ -16,7 +16,7 @@ public class GirlScript : MonoBehaviour {
 	
 	void Start () {
 		GameManager.getInstance ().addGuardListener (this);
-		anim = GetComponentInChildren<Animator> ();
+		anim = GetComponent<Animator> ();
 		agent = GetComponent<NavMeshAgent>();  
 		eyes = GetComponentInChildren<FOV2DEyes>();
 		visionCone = GetComponentInChildren<FOV2DVisionCone>();
@@ -31,20 +31,24 @@ public class GirlScript : MonoBehaviour {
 		
 		InvokeRepeating ("CheckVision", 0, 0.3f);
 	}
-	
+
 	public void gameStateChanged(GameState gameState)
 	{
-		if (gameState == GameState.Suspected)
+		if (gameState == GameState.Suspected) {
 			eyes.fovMaxDistance++;
+		}
 		else if (gameState == GameState.Detected)
 			agent.speed = 2;
 	}
 	
 	void Idle(){
-		chasePlayer = false;
 		currentState = State.IDLE;
+		chasePlayer = false;
 		anim.SetBool ("Move", false);
+		anim.SetBool ("Detection", false);
 		agent.Stop();
+		if (agent.destination != point.position)
+			GotoNextPoint ();
 	}
 	
 	void Alert(){
@@ -54,11 +58,12 @@ public class GirlScript : MonoBehaviour {
 			Debug.Log ("Alert!");
 			currentState = State.ALERT;
 			anim.SetBool ("Move", true);
-			anim.SetBool ("Detect", true);
+			anim.SetBool ("Detection", true);
 			agent.Stop ();
-			
+				
 			GameManager.getInstance().stepUpGameState();
 		}
+		Walk ();
 	}
 	
 	void NoAlert(){
@@ -67,8 +72,12 @@ public class GirlScript : MonoBehaviour {
 		if (currentState == State.ALERT) {
 			Debug.Log ("NoAlert");
 			currentState = State.IDLE;
-			anim.SetBool("Detect", false);
+			anim.SetBool("", false);
 			Walk ();
+		}
+
+		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Walk")) {
+			chasePlayer = false;
 		}
 	}
 	
@@ -81,7 +90,9 @@ public class GirlScript : MonoBehaviour {
 
 	void PointingDone()
 	{
-		anim.SetBool ("Detect", false);
+		anim.SetBool ("Detection", false);
+		chasePlayer = true;
+		agent.speed = Mathf.Max(1, agent.speed);
 		Walk ();
 	}
 
@@ -89,7 +100,6 @@ public class GirlScript : MonoBehaviour {
 	{
 		lastSeen = noisePos;
 		chasePlayer = true;
-		anim.SetBool ("Detect", false);
 		Walk ();
 	}
 	
@@ -128,9 +138,10 @@ public class GirlScript : MonoBehaviour {
 		
 		if (alert) {
 			Alert ();
+			chasePlayer = true;
+		} else {
+			NoAlert ();
 		}
-		else
-			NoAlert();
-		chasePlayer = alert;
+
 	}
 }
