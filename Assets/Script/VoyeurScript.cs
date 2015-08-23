@@ -99,6 +99,14 @@ public class VoyeurScript : MonoBehaviour {
 				{
 					points *= 100;
 				}
+
+				GameState gs = GameManager.getInstance().getGameState();
+
+				if(gs == GameState.Stealth)
+					points *=2;
+				else if(gs == GameState.Detected)
+					points /=2;
+
 				GameManager.getInstance().updatePoints(points);
 			}
 		}
