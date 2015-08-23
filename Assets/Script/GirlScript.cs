@@ -14,6 +14,8 @@ public class GirlScript : MonoBehaviour {
 	
 	enum State {IDLE, WALK, ALERT};
 	State currentState;
+
+    private SoundManager soundManager;
 	
 	void Start () {
 		GameManager.getInstance ().addGuardListener (this);
@@ -32,6 +34,9 @@ public class GirlScript : MonoBehaviour {
 		anim.SetBool ("Move", true);
 
 		InvokeRepeating ("CheckVision", 0, 0.3f);
+
+        soundManager = SoundManager.getInstance();
+
 	}
 	
 	public void gameStateChanged(GameState gameState)
@@ -61,6 +66,8 @@ public class GirlScript : MonoBehaviour {
 			
 			GameManager.getInstance().stepUpGameState();
 			GameManager.getInstance().setPlayerPos(this.transform.position);
+
+            soundManager.StartGirlScream();
 		}
 	}
 	
