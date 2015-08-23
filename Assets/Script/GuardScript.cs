@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using AssemblyCSharp;
 public class GuardScript : MonoBehaviour {
 
 	public Transform[] points;
@@ -16,6 +16,7 @@ public class GuardScript : MonoBehaviour {
 	State currentState;
 	
 	void Start () {
+		GameManager.getInstance ().addGuardListener (this);
 		anim = GetComponentInChildren<Animator> ();
 		agent = GetComponent<NavMeshAgent>();  
 		eyes = GetComponentInChildren<FOV2DEyes>();
@@ -32,6 +33,14 @@ public class GuardScript : MonoBehaviour {
 		InvokeRepeating ("CheckVision", 0, 0.3f);
 	}
 
+	public void gameStateChanged(GameState gameState)
+	{
+		if (gameState == GameState.Suspected)
+			eyes.fovMaxDistance++;
+		else if (gameState == GameState.Detected)
+			agent.speed *= 1.25f;
+	}
+
 	void Idle(){
 		currentState = State.IDLE;
 		anim.SetBool ("Move", false);
@@ -40,26 +49,21 @@ public class GuardScript : MonoBehaviour {
 
 	void Alert(){
 		visionCone.status = FOV2DVisionCone.Status.Alert;	
-
 		if (currentState != State.ALERT && !chasePlayer) {
-			GameManager.getInstance().updatePoints(-5);
+			GameManager.getInstance().updatePoints(-10);
 			Debug.Log ("Alert!");
 			currentState = State.ALERT;
 			anim.SetBool ("Move", true);
 			anim.SetBool ("Detect", true);
 			agent.Stop ();
+
+			GameManager.getInstance().stepUpGameState();
 		}
 	}
-
-	void UhOhDone()
-	{
-		anim.SetBool ("Detect", false);
-		Walk ();
-	}
-
+			
 	void NoAlert(){
 		visionCone.status = FOV2DVisionCone.Status.Idle;
-	
+
 		if (currentState == State.ALERT) {
 			Debug.Log ("NoAlert");
 			currentState = State.IDLE;
@@ -74,21 +78,36 @@ public class GuardScript : MonoBehaviour {
 		agent.Resume ();
 		GotoNextPoint ();
 	}
+
+	public void UhOhDone()
+	{
+		anim.SetBool ("Detect", false);
+		Walk ();
+	}
 	
 	public void IdleEnd(){
 		if(currentState == State.IDLE)
 			Walk ();
 	}
 
+	public void heardNoise(Vector3 noisePos)
+	{
+		lastSeen = noisePos;
+		chasePlayer = true;
+		anim.SetBool ("Detect", false);
+		Walk ();
+	}
+
 	void GotoNextPoint() {
 
 		// Returns if no points have been set up
-		if (points.Length == 0 && lastSeen == null)
+		if (points.Length == 0 && !chasePlayer)
 			return;
 
-		if (lastSeen != null && chasePlayer) {
+		if (chasePlayer) {
 			agent.destination = lastSeen;
-		} else {
+		}
+		else {
 			// Set the agent to go to the currently selected destination.
 			agent.destination = points [destPoint].position;
 		
@@ -108,7 +127,6 @@ public class GuardScript : MonoBehaviour {
 	}
 
 	void CheckVision(){
-
 		bool alert = false;
 		foreach (RaycastHit hit in eyes.hits) {
 			if (hit.transform && hit.transform.tag == "Player") {

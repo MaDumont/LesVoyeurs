@@ -1,0 +1,243 @@
+Initialize engine version: 5.1.2f1 (afd2369b692a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 5700 Series (ID=0x68b8)
+    Vendor:   ATI
+    VRAM:     1009 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\CreativeJam\LesVoyeurs\game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\CreativeJam\LesVoyeurs\game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\CreativeJam\LesVoyeurs\game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\CreativeJam\LesVoyeurs\game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\CreativeJam\LesVoyeurs\game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\CreativeJam\LesVoyeurs\game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\CreativeJam\LesVoyeurs\game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\CreativeJam\LesVoyeurs\game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\CreativeJam\LesVoyeurs\game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\CreativeJam\LesVoyeurs\game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.044 seconds
+desktop: 1680x1050 60Hz; virtual: 1680x1050 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\CreativeJam\LesVoyeurs\game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\CreativeJam\LesVoyeurs\game_Data\Managed\System.dll (this message is harmless)
+Unable to find shaders used for the terrain engine. Please include Nature/Terrain/Diffuse shader in Graphics settings.
+ 
+(Filename:  Line: 381)
+
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+WwiseUnity: Initialize sound engine ...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+DllNotFoundException: AkSoundEngine
+  at (wrapper managed-to-native) AkSoundEnginePINVOKE:CSharp_new_AkMemSettings ()
+  at AkMemSettings..ctor () [0x00000] in <filename unknown>:0 
+  at AkInitializer.Awake () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+DllNotFoundException: AkSoundEngine
+  at (wrapper managed-to-native) AkSoundEnginePINVOKE:CSharp_SetListenerPosition (single,single,single,single,single,single,single,single,single,uint)
+  at AkSoundEngine.SetListenerPosition (Single FrontX, Single FrontY, Single FrontZ, Single TopX, Single TopY, Single TopZ, Single PosX, Single PosY, Single PosZ, UInt32 in_ulListenerIndex) [0x00000] in <filename unknown>:0 
+  at AkAudioListener.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 3 worker threads for Enlighten.
+  Thread -> id: 17d4 -> priority: 1 
+  Thread -> id: 1b1c -> priority: 1 
+  Thread -> id: 13e0 -> priority: 1 
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.596228 ms
+WwiseUnity: Initialize sound engine ...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+DllNotFoundException: AkSoundEngine
+  at (wrapper managed-to-native) AkSoundEnginePINVOKE:CSharp_new_AkMemSettings ()
+  at AkMemSettings..ctor () [0x00000] in <filename unknown>:0 
+  at AkInitializer.Awake () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Can't remove AkTerminator (Script) because AkInitializer (Script) depends on it
+ 
+(Filename:  Line: 1379)
+
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1012.
+Total: 0.268797 ms (FindLiveObjects: 0.056088 ms CreateObjectMapping: 0.041683 ms MarkObjects: 0.162443 ms  DeleteObjects: 0.007968 ms)
+
+DllNotFoundException: AkSoundEngine
+  at (wrapper managed-to-native) AkSoundEnginePINVOKE:CSharp_SetListenerPosition (single,single,single,single,single,single,single,single,single,uint)
+  at AkSoundEngine.SetListenerPosition (Single FrontX, Single FrontY, Single FrontZ, Single TopX, Single TopY, Single TopZ, Single PosX, Single PosY, Single PosZ, UInt32 in_ulListenerIndex) [0x00000] in <filename unknown>:0 
+  at AkAudioListener.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
+Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
+DllNotFoundException: AkSoundEngine
+  at (wrapper managed-to-native) AkSoundEnginePINVOKE:CSharp_IsInitialized ()
+  at AkSoundEngine.IsInitialized () [0x00000] in <filename unknown>:0 
+  at AkTerminator.Terminate () [0x00000] in <filename unknown>:0 
+  at AkTerminator.OnApplicationQuit () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+

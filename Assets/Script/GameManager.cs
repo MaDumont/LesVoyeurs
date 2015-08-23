@@ -12,7 +12,9 @@ public class GameManager : MonoBehaviour {
 	private GameState gamestate;
 	private ArrayList pointsListeners;
     public SoundManager soundManager = SoundManager.getInstance();
+	private ArrayList guardListeners;
 	private bool gameOver = false;
+	private Vector3 playerPos;
 
 	public static GameManager getInstance()
 	{
@@ -44,13 +46,13 @@ public class GameManager : MonoBehaviour {
 	void InitGame()
 	{
 		timeRemaining = Timer;
+		gamestate = GameState.Stealth;
 	}
 
 	private GameManager()
 	{
 		points = 0;
-		gamestate = GameState.Stealth;
-		pointsListeners = new ArrayList ();
+		guardListeners = new ArrayList ();
 	}
 
 	// Use this for initialization
@@ -75,14 +77,13 @@ public class GameManager : MonoBehaviour {
 	public void updatePoints(int delta)
 	{
 		points += delta;
-		foreach (MonoBehaviour listener in pointsListeners) 
-		{
-			listener.SendMessage("updateScore", points.ToString());
-		}
 	}
 
 	void OnGUI()
 	{
+		string sidePanelString = "points : " + points + "\nstate : " + GameManager.getInstance().getGameState();
+		GUI.Box(new Rect(0,0,100,100),sidePanelString);
+
 		var x = Screen.width/2 - 50;
 		GUI.Box(new Rect(x,0,100,25),timeRemaining.ToString("#.00"));
 
@@ -108,13 +109,38 @@ public class GameManager : MonoBehaviour {
 		gamestate = newGameState;
 	}
 
-	public void addListener(MonoBehaviour listner)
+	public void addGuardListener(MonoBehaviour listner)
 	{
-		pointsListeners.Add (listner);
+		guardListeners.Add (listner);
+	}
+	
+	public void removeGuardListener(MonoBehaviour listner)
+	{
+		guardListeners.Remove (listner);
 	}
 
-	public void removeListener(MonoBehaviour listner)
+	public void setPlayerPos(Vector3 pos)
 	{
-		pointsListeners.Remove (listner);
+		playerPos = pos;
+		foreach (MonoBehaviour listener in guardListeners) 
+		{
+			listener.SendMessage("heardNoise", pos);
+		}
+	}
+
+	public Vector3 getPlayerPos()
+	{
+		return playerPos;
+	}
+
+	public void stepUpGameState()
+	{
+		if (gamestate != GameState.Detected) {
+			gamestate++;
+			foreach (MonoBehaviour listener in guardListeners) 
+			{
+				listener.SendMessage("gameStateChanged", gamestate);
+			}
+		}
 	}
 }
