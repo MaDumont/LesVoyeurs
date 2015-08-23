@@ -30,6 +30,10 @@ public class SoundManager: MonoBehaviour{
         DontDestroyOnLoad(gameObject);
 
         AkSoundEngine.LoadBank("vjsoundbank", AkSoundEngine.AK_DEFAULT_POOL_ID, out bankID);
+    }
+
+    void Start()
+    {
         soundGaugeManager = SoundGaugeManager.getInstance();
     }
 
