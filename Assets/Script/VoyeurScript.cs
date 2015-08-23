@@ -28,6 +28,7 @@ public class VoyeurScript : MonoBehaviour {
 		InvokeRepeating ("CheckVision", 0, 0.3f);
 		//GameManager.getInstance().setPlayerPos(this.transform.position);
         soundManager = SoundManager.getInstance();
+		GameManager.getInstance ().SetPlayer (this.gameObject);
 	}
 	
 	// Update is called once per frame
@@ -111,5 +112,4 @@ public class VoyeurScript : MonoBehaviour {
 			}
 		}
 	}
-
 }

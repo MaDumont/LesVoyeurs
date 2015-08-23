@@ -16,7 +16,7 @@ Platform assembly: C:\CreativeJam\LesVoyeurs\game_Data\Managed\UnityEngine.Netwo
 Loading C:\CreativeJam\LesVoyeurs\game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\CreativeJam\LesVoyeurs\game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\CreativeJam\LesVoyeurs\game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.044 seconds
+- Completed reload, in  0.043 seconds
 desktop: 1680x1050 60Hz; virtual: 1680x1050 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -178,9 +178,9 @@ DllNotFoundException: AkSoundEngine
 (Filename:  Line: -1)
 
 Setting up 3 worker threads for Enlighten.
-  Thread -> id: 17d4 -> priority: 1 
-  Thread -> id: 1b1c -> priority: 1 
-  Thread -> id: 13e0 -> priority: 1 
+  Thread -> id: 14d0 -> priority: 1 
+  Thread -> id: 15c0 -> priority: 1 
+  Thread -> id: 5b0 -> priority: 1 
 Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
 Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
 Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
@@ -188,7 +188,7 @@ Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono
 Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\libAkSoundEngine
 Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/libAkSoundEngine
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.596228 ms
+UnloadTime: 2.094293 ms
 WwiseUnity: Initialize sound engine ...
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
@@ -205,8 +205,8 @@ Can't remove AkTerminator (Script) because AkInitializer (Script) depends on it
 (Filename:  Line: 1379)
 
 
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1012.
-Total: 0.268797 ms (FindLiveObjects: 0.056088 ms CreateObjectMapping: 0.041683 ms MarkObjects: 0.162443 ms  DeleteObjects: 0.007968 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3644.
+Total: 0.546484 ms (FindLiveObjects: 0.141908 ms CreateObjectMapping: 0.103289 ms MarkObjects: 0.289333 ms  DeleteObjects: 0.011033 ms)
 
 DllNotFoundException: AkSoundEngine
   at (wrapper managed-to-native) AkSoundEnginePINVOKE:CSharp_SetListenerPosition (single,single,single,single,single,single,single,single,single,uint)
@@ -214,6 +214,93 @@ DllNotFoundException: AkSoundEngine
   at AkAudioListener.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
+
+DllNotFoundException: AkSoundEngine
+  at (wrapper managed-to-native) AkSoundEnginePINVOKE:CSharp_SetListenerPosition (single,single,single,single,single,single,single,single,single,uint)
+  at AkSoundEngine.SetListenerPosition (Single FrontX, Single FrontY, Single FrontZ, Single TopX, Single TopY, Single TopZ, Single PosX, Single PosY, Single PosZ, UInt32 in_ulListenerIndex) [0x00000] in <filename unknown>:0 
+  at AkAudioListener.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+DllNotFoundException: AkSoundEngine
+  at (wrapper managed-to-native) AkSoundEnginePINVOKE:CSharp_SetListenerPosition (single,single,single,single,single,single,single,single,single,uint)
+  at AkSoundEngine.SetListenerPosition (Single FrontX, Single FrontY, Single FrontZ, Single TopX, Single TopY, Single TopZ, Single PosX, Single PosY, Single PosZ, UInt32 in_ulListenerIndex) [0x00000] in <filename unknown>:0 
+  at AkAudioListener.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+DllNotFoundException: AkSoundEngine
+  at (wrapper managed-to-native) AkSoundEnginePINVOKE:CSharp_SetListenerPosition (single,single,single,single,single,single,single,single,single,uint)
+  at AkSoundEngine.SetListenerPosition (Single FrontX, Single FrontY, Single FrontZ, Single TopX, Single TopY, Single TopZ, Single PosX, Single PosY, Single PosZ, UInt32 in_ulListenerIndex) [0x00000] in <filename unknown>:0 
+  at AkAudioListener.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Alert!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GuardScript.Alert () [0x00000] in <filename unknown>:0 
+  at GuardScript.CheckVision () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NoAlert
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Alert!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GuardScript.Alert () [0x00000] in <filename unknown>:0 
+  at GuardScript.CheckVision () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NoAlert
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Alert!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GuardScript.Alert () [0x00000] in <filename unknown>:0 
+  at GuardScript.CheckVision () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Alert!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GuardScript.Alert () [0x00000] in <filename unknown>:0 
+  at GuardScript.CheckVision () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NoAlert
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Alert!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GuardScript.Alert () [0x00000] in <filename unknown>:0 
+  at GuardScript.CheckVision () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NoAlert
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/AkSoundEngine
 Fallback handler could not load library C:/CreativeJam/LesVoyeurs/game_Data/Mono/.\AkSoundEngine
