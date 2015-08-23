@@ -40,8 +40,16 @@ public class SoundManager: MonoBehaviour{
 
     private void StopEvent(string eventName)
     {
-        uint eventID = AkSoundEngine.GetIDFromString(eventName);
-        AkSoundEngine.ExecuteActionOnEvent(eventID, AkActionOnEventType.AkActionOnEventType_Stop, gameObject, 0, AkCurveInterpolation.AkCurveInterpolation_Sine);
+        uint eventID;
+        eventID = AkSoundEngine.GetIDFromString(eventName);
+        AkSoundEngine.ExecuteActionOnEvent(eventID, AkActionOnEventType.AkActionOnEventType_Stop, gameObject, 500, AkCurveInterpolation.AkCurveInterpolation_Sine);
+    }
+
+    private void StopEvent(string eventName, GameObject soundController)
+    {
+        uint eventID;
+        eventID = AkSoundEngine.GetIDFromString(eventName);
+        AkSoundEngine.ExecuteActionOnEvent(eventID, AkActionOnEventType.AkActionOnEventType_Stop, soundController, 500, AkCurveInterpolation.AkCurveInterpolation_Sine);
     }
 
 
@@ -83,9 +91,10 @@ public class SoundManager: MonoBehaviour{
     {
         PlayEvent("PlayMusic");
     }
-    public void StopIntroMusic()
+    public void StopIntroMusic(GameObject musicController)
     {
-        StopEvent("PlayMusic");
+        //je comprend pas pourquoi il faut lui donner le GameObject qui a parti la chanson
+        StopEvent("PlayMusic", musicController);
     }
     public void StartWalkSound()
     {
